@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title project</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Title project</title>
+    <link rel="stylesheet" href="/build/libs/css/libs.css" />
+    <link rel="stylesheet" href="/build/css/styles.min.css" />
+  </head>
 
-	<link rel="stylesheet" href="/build/libs/css/libs.css" />
-	<link rel="stylesheet" href="/build/css/styles.min.css" />
-</head>
+  <body>
+    <main class="main-wrapper">
+      <div class="content">
+        @@include('header.html')
 
-<body>
-	<main class="main-wrapper">
-		<div class="content">
-			@@include('header.html')
+        <section class="first-screen">
+          <div class="container">
+            <h1 class="first-screen__title">Недвижимость в Вологде</h1>
 
-			<section class="first-screen">
-				<div class="container">
-					<h1 class="first-screen__title">Недвижимость в Вологде!</h1>
+            <div class="first-screen__filter fs-filter">
+              <div class="fs-filter__top">
+                <div class="fs-filter__item"></div>
+                <div class="fs-filter__item"></div>
+                <div class="fs-filter__item"></div>
+              </div>
 
-					<div class="first-screen__filter fs-filter">
-						<div class="fs-filter__top">
-							<div class="fs-filter__item"></div>
-							<div class="fs-filter__item"></div>
-							<div class="fs-filter__item"></div>
-						</div>
+              <div class="fs-filter__bottom"></div>
+            </div>
+          </div>
+        </section>
+      </div>
 
-						<div class="fs-filter__bottom"></div>
-					</div>
-				</div>
-			</section>
-		</div>
+      @@include('footer.html')
+    </main>
 
-		@@include('footer.html')
-	</main>
-
-	<script src="/build/libs/js/libs.js"></script>
-	<script src="/build/js/scripts.min.js"></script>
-</body>
-
+    <script src="/build/libs/js/libs.js"></script>
+    <script src="/build/js/scripts.min.js"></script>
+  </body>
 </html>

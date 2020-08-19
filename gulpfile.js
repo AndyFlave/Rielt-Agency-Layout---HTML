@@ -225,7 +225,7 @@ function otf2ttf() {
     .pipe(gulp.dest("src/fonts/"));
 }
 
-function fontsStyle(params) {
+function fontsStyle(done) {
 
   let file_content = fs.readFileSync(source_folder + '/scss/_fonts.scss');
   if (file_content == '') {
@@ -244,6 +244,8 @@ function fontsStyle(params) {
       }
     })
   }
+
+  done();
 }
 
 function cb() {}
