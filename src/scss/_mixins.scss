@@ -1,0 +1,108 @@
+/* ========== MIXINS ========== */
+@mixin border-radius($value: 0) {
+	border-radius: $value;
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	-ms-border-radius: $value;
+	-o-border-radius: $value;
+}
+
+@mixin transition($duration: 0s, $property: all, $timing: ease, $delay: 0s) {
+	transition: $property $duration $timing $delay;
+	-webkit-transition: $property $duration $timing $delay;
+	-moz-transition: $property $duration $timing $delay;
+	-ms-transition: $property $duration $timing $delay;
+	-o-transition: $property $duration $timing $delay;
+}
+
+@mixin translate($x: 0, $y: 0) {
+	transform: translate($x, $y);
+	-webkit-transform: translate($x, $y);
+	-moz-transform: translate($x, $y);
+	-ms-transform: translate($x, $y);
+	-o-transform: translate($x, $y);
+}
+
+@mixin rotate($deg: 0) {
+	transform: rotate($deg);
+	-webkit-transform: rotate($deg);
+	-moz-transform: rotate($deg);
+	-ms-transform: rotate($deg);
+	-o-transform: rotate($deg);
+}
+
+@mixin input-placeholder {
+	&.placeholder {
+		@content;
+	}
+
+	&:-moz-placeholder {
+		@content;
+	}
+
+	&::-moz-placeholder {
+		@content;
+	}
+
+	&:-ms-input-placeholder {
+		@content;
+	}
+
+	&::-webkit-input-placeholder {
+		@content;
+	}
+}
+
+@mixin for-desktop {
+	@media (max-width: 1825px) {
+		@content;
+	}
+}
+
+@mixin for-medium-desktop {
+	@media (max-width: 1439px) {
+		@content;
+	}
+}
+
+@mixin for-small-desktop {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}
+
+@mixin for-very-small-desktop {
+	@media (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin for-tablet {
+	@media (max-width: 900px) {
+		@content;
+	}
+}
+
+@mixin for-phone-only {
+	@media (max-width: 767px) {
+		@content;
+	}
+}
+
+@mixin for-small-phone {
+	@media (max-width: 425px) {
+		@content;
+	}
+}
+
+
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"),
+		url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}

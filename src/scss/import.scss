@@ -1,0 +1,17 @@
+@import '_mixins';
+@import '_fonts';
+@import '_libs';
+@import '_vars';
+@import '_reset';
+@import '_interface';
+@import '_grid';
+
+
+@import 'components/_style';
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_modal';
+@import 'components/_politics';
+
+
+@import 'pages/main-page/_first-screen';
