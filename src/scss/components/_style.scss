@@ -1,0 +1,41 @@
+/* =========== DROP ARROW =========== */
+.drop-arrow {
+	position: relative;
+	padding-right: 22px;
+	cursor: pointer;
+	line-height: 1.2;
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: -7px;
+		width: 13px;
+		height: 8px;
+		@include translate(-50%, -50%);
+		background-image: url(../img/drop-arrow.svg) no-repeat center/contain;
+	}
+}
+
+@include for-very-small-desktop {
+	.drop-arrow {
+		padding-right: 18px;
+	}
+}
+
+/* =========== PHONES ICON =========== */
+.phones-icon {
+	position: relative;
+	padding-left: 24px;
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 8px;
+		top: 50%;
+		width: 14px;
+		height: 14px;
+		@include translate(-50%, -50%);
+		background-image: url(../img/tel.svg) no-repeat center/contain;
+	}
+}

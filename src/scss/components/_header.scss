@@ -1,0 +1,207 @@
+.header {
+	padding: 25px 0;
+	background-color: $default-color;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__column {
+		display: flex;
+		align-items: center;
+
+		&:nth-child(2) {
+			padding: 0 15px;
+		}
+
+		&:nth-child(3) {
+			flex-direction: column;
+			align-items: flex-end;
+		}
+	}
+
+	&__city {
+		margin-right: 30px;
+	}
+}
+
+.logotype {
+	&__company {
+		display: block;
+		font-size: 3.5rem;
+		letter-spacing: .4px;
+		line-height: 1.2;
+		font-family: 'RussoOne', sans-serif;
+		color: $color-2;
+		text-transform: uppercase;
+	}
+
+	&__sign {
+		display: block;
+		font-size: 1.4rem;
+		line-height: 1.2;
+		color: $color-9;
+	}
+}
+
+.city {
+	&__item {
+		font-size: 1.6rem;
+		font-weight: 600;
+
+		&_current {
+			color: $color-2;
+			line-height: 1;
+		}
+
+		&_drop {
+			display: none;
+		}
+	}
+
+	&__prev-abbr {}
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+
+	&__list {
+		display: flex;
+		align-items: center;
+
+		li {
+			margin: 0 25px;
+
+
+			a {
+				font-size: 1.6rem;
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.phones {
+	&__item {
+		line-height: 1.1;
+		font-size: 1.7rem;
+		font-weight: 700;
+		white-space: nowrap;
+		margin-bottom: 6px;
+		display: block;
+	}
+}
+
+.callback-list {
+	&__item {
+		font-size: 1.4rem;
+		line-height: 1.2;
+
+		&_visible {
+			display: block;
+			color: $color-2;
+		}
+	}
+
+	&__drop-down {
+		display: none;
+	}
+}
+
+
+@include for-very-small-desktop {
+	.header {
+		padding: 20px 0;
+
+		&__container {}
+
+		&__column {}
+
+		&__city {
+			margin-right: 12px;
+		}
+	}
+
+	.logotype {
+
+		&__company {
+			font-size: 3rem;
+			line-height: 1.1;
+		}
+
+		&__sign {
+			font-size: 1.2rem;
+		}
+	}
+
+	.city {
+
+		&__item {
+			font-size: 1.4rem;
+
+			&_current {}
+
+			&_drop {}
+		}
+
+		&__prev-abbr {}
+	}
+
+	.drop-arrow {}
+
+	.navigation {
+
+		&__list {
+			li {
+				margin: 0 8px;
+
+				a {
+					font-size: 1.4rem;
+				}
+			}
+		}
+	}
+
+	.phones {
+
+		&__item {
+			font-size: 1.5rem;
+		}
+	}
+
+	.phones-icon {}
+
+	.callback-list {
+
+		&__item {
+
+			&_visible {}
+		}
+
+		&__drop-down {}
+	}
+
+}
+
+
+@include for-phone-only {
+	.header {
+		&__container {
+			align-items: flex-start;
+		}
+
+		&__column {
+
+			&:nth-child(2) {
+				display: none;
+			}
+
+			&:nth-child(3) {
+				display: none;
+			}
+		}
+	}
+}

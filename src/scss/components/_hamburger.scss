@@ -1,0 +1,69 @@
+#hamburger-6.active {
+	-webkit-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+}
+
+#hamburger-6.active .line:nth-child(2) {
+	width: 0px;
+}
+
+#hamburger-6.active .line:nth-child(1) {
+	-webkit-transform: translateY(11px);
+	transform: translateY(11px);
+	-moz-transform: translateY(11px);
+	-ms-transform: translateY(11px);
+	-o-transform: translateY(11px);
+}
+
+#hamburger-6.active .line:nth-child(3) {
+	-webkit-transform: translateY(-11px) rotate(90deg);
+	transform: translateY(-11px) rotate(90deg);
+	-moz-transform: translateY(-11px) rotate(90deg);
+	-ms-transform: translateY(-11px) rotate(90deg);
+	-o-transform: translateY(-11px) rotate(90deg);
+}
+
+.hamburger {
+	width: 40px;
+	text-align: center;
+	z-index: 999;
+	display: none;
+}
+
+.row .three {
+	padding: 80px 30px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: $color-2;
+	color: #ecf0f1;
+	text-align: center;
+}
+
+.hamburger .line {
+	width: 40px;
+	height: 5px;
+	background-color: $color-2;
+	display: block;
+	margin: 6px auto;
+	-webkit-transition: all 0.4s linear;
+	transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+}
+
+.hamburger:hover {
+	cursor: pointer;
+}
+
+
+@include for-phone-only {
+	.hamburger {
+		display: block;
+	}
+}

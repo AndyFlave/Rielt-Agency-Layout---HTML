@@ -1,0 +1,29 @@
+html.active {
+	overflow: hidden;
+
+	.mobile-menu {
+		display: block;
+	}
+}
+
+.main-wrapper {
+	@include transition(.4s);
+	background-color: $default-color;
+}
+
+html.active .main-wrapper {
+	@include translate($x: -240px);
+}
+
+.mobile-menu {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 250px;
+	min-height: 100vh;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	z-index: 0;
+	background-color: #f6f6f6;
+}
