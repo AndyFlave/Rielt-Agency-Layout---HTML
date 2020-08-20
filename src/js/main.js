@@ -21,6 +21,33 @@ $(function () {
 		}
 	}
 
+	$('.callback-list').hover(
+		function () {
+			$('.callback-list__drop-down').slideDown();
+		},
+		function () {
+			$('.callback-list__drop-down').hide();
+		}
+	)
+
+	$('.city').hover(
+		function () {
+			$('.city__item_drop').slideDown();
+		},
+		function () {
+			$('.city__item_drop').hide();
+		}
+	)
+
+	// $('.callback-list').hover(
+	// 	function () {
+	// 		$('.callback-list__drop-down').slideDown();
+	// 	},
+	// 	function () {
+	// 		$('.callback-list__drop-down').slideUp();
+	// 	}
+	// )
+
 	hamburger.on('click', toggleMenu);
 
 	$(window).resize(closeMenu);

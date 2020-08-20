@@ -47,9 +47,13 @@
 }
 
 .city {
+	position: relative;
+
 	&__item {
 		font-size: 1.6rem;
 		font-weight: 600;
+		cursor: pointer;
+		width: 100%;
 
 		&_current {
 			color: $color-2;
@@ -57,7 +61,16 @@
 		}
 
 		&_drop {
+			padding: 8px 8px 8px 12px;
+			background-color: $default-color;
 			display: none;
+			position: absolute;
+			left: 0;
+			top: 100%;
+
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -96,9 +109,13 @@
 }
 
 .callback-list {
+	position: relative;
+
 	&__item {
 		font-size: 1.4rem;
 		line-height: 1.2;
+		white-space: nowrap;
+		display: block;
 
 		&_visible {
 			display: block;
@@ -108,6 +125,22 @@
 
 	&__drop-down {
 		display: none;
+		padding: 12px 22px;
+		position: absolute;
+		right: 0;
+		top: 100%;
+		text-align: right;
+		background-color: $default-color;
+
+		.callback-list__item {
+			&:not(:last-child) {
+				margin-bottom: 8px;
+			}
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }
 
