@@ -20,10 +20,37 @@ html.active .main-wrapper {
 	position: fixed;
 	top: 0;
 	right: 0;
-	width: 250px;
+	width: 240px;
 	min-height: 100vh;
 	overflow-y: scroll;
 	-webkit-overflow-scrolling: touch;
 	z-index: 0;
 	background-color: #f6f6f6;
+	padding: 20px 15px;
+
+	.logotype {
+		margin-bottom: 20px;
+	}
+
+	.navigation {
+		margin-bottom: 20px;
+
+		&__list {
+			flex-direction: column;
+			align-items: flex-start;
+
+			li {
+				margin: 0 0 8px 0;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+
+	.city {
+		margin-right: 0;
+		margin-bottom: 70px;
+	}
 }

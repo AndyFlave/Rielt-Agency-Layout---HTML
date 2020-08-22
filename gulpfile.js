@@ -252,7 +252,7 @@ function cb() {}
 
 function watch(cb) {
   server.init({
-    proxy: "rielt.loc/build",
+    proxy: "rielt.loc",
   });
 
   gulp

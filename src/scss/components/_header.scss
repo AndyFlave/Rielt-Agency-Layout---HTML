@@ -28,6 +28,8 @@
 }
 
 .logotype {
+	display: block;
+
 	&__company {
 		display: block;
 		font-size: 3.5rem;
@@ -73,8 +75,6 @@
 			}
 		}
 	}
-
-	&__prev-abbr {}
 }
 
 .navigation {
@@ -149,10 +149,6 @@
 	.header {
 		padding: 20px 0;
 
-		&__container {}
-
-		&__column {}
-
 		&__city {
 			margin-right: 12px;
 		}
@@ -174,16 +170,8 @@
 
 		&__item {
 			font-size: 1.4rem;
-
-			&_current {}
-
-			&_drop {}
 		}
-
-		&__prev-abbr {}
 	}
-
-	.drop-arrow {}
 
 	.navigation {
 
@@ -199,24 +187,10 @@
 	}
 
 	.phones {
-
 		&__item {
 			font-size: 1.5rem;
 		}
 	}
-
-	.phones-icon {}
-
-	.callback-list {
-
-		&__item {
-
-			&_visible {}
-		}
-
-		&__drop-down {}
-	}
-
 }
 
 
