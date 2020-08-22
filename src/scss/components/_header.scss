@@ -69,6 +69,7 @@
 			position: absolute;
 			left: 0;
 			top: 100%;
+			z-index: 99;
 
 			&:hover {
 				text-decoration: underline;
@@ -131,6 +132,7 @@
 		top: 100%;
 		text-align: right;
 		background-color: $default-color;
+		z-index: 99;
 
 		.callback-list__item {
 			&:not(:last-child) {
