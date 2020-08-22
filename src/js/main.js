@@ -74,4 +74,5 @@ $(function () {
 		new AppendContentMenu('.phones', '.mobile-menu').appendMenu();
 
 	});
+
 });
