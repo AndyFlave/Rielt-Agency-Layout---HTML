@@ -60,6 +60,18 @@ $(function () {
 	new CustomHover('.city', '.city__item_drop').hover();
 
 
+	$('.catalog__slider').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		autoplayTimeout: 4000,
+		margin: 0,
+		items: 1,
+		dots: false
+		// dotsContainer: $(this).find('.catalog__item-dots')
+	})
+
+
 
 
 

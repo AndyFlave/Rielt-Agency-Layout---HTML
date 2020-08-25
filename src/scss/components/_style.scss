@@ -39,3 +39,43 @@
 		background-image: url(../img/tel.svg) no-repeat center/contain;
 	}
 }
+
+/* =========== TITLE BLOCK =========== */
+.title-block {
+	font-weight: 700;
+	font-size: 3rem;
+}
+
+/* =========== EMPTY =========== */
+.empty {
+	opacity: 0;
+	visibility: hidden;
+	height: 0 !important;
+	max-height: 0 !important;
+	min-height: 0 !important;
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+/* =========== JUSTFY CONTENT CENTER =========== */
+.justify-content-center {
+	display: flex;
+	justify-content: center;
+}
+
+/* =========== BTN =========== */
+.btn {
+	padding: 15px 30px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 2rem;
+	color: $default-text-color;
+	background-color: $color-2;
+	@include transition(.4s);
+
+	&:hover {
+		background-color: $color-4;
+	}
+}
