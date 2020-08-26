@@ -40,6 +40,32 @@
 	}
 }
 
+/* =========== TITLES =========== */
+h1 {
+	font-size: 3.5rem;
+}
+
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+@include for-very-small-desktop {
+	h3 {
+		font-size: 1.8rem;
+	}
+}
+
+@include for-phone-only {
+	.h2 {
+		font-size: 2.8rem !important;
+	}
+}
+
+
 /* =========== TITLE BLOCK =========== */
 .title-block {
 	font-weight: 700;
@@ -90,5 +116,17 @@
 @include for-phone-only {
 	.btn {
 		font-size: 1.6rem;
+	}
+}
+
+/* =========== POLITICS LINK MODAL =========== */
+.politics-link-modal {
+	font-size: 1.4rem;
+	color: $color-text-2;
+	@include transition(.4s);
+
+	&:hover {
+		color: $color-text-4;
+		text-decoration: underline;
 	}
 }

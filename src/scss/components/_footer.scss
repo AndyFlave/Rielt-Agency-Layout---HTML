@@ -1,0 +1,168 @@
+.footer {
+	&__container {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	&__top {
+		padding: 60px 0;
+		background-color: $color-8;
+	}
+
+	&__column {
+		padding-right: 30px;
+		width: 100%;
+	}
+
+	&__column-title {
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	&__link {
+		display: block;
+		font-size: 1.6rem;
+		line-height: 1.1;
+		margin-bottom: 6px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	&__bottom {
+		.container {
+			align-items: center;
+		}
+
+		padding: 27px 0 23px;
+		box-shadow: 0px 8px 11px $color-5;
+	}
+
+	&__copyrigt {
+		font-size: 1.4rem;
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+
+	&__item {
+		min-width: 25px;
+		height: 25px;
+		margin-right: 25px;
+		@include transition(.4s);
+
+		&:nth-child(1) {
+			background: url(../img/fb.svg) no-repeat center/contain;
+		}
+
+		&:nth-child(2) {
+			background: url(../img/tw.svg) no-repeat center/contain;
+		}
+
+		&:nth-child(3) {
+			background: url(../img/you.svg) no-repeat center/contain;
+		}
+
+		&:nth-child(4) {
+			background: url(../img/inst.svg) no-repeat center/contain;
+		}
+
+		&:hover {
+			transform: scale(1.1);
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			-o-transform: scale(1.1);
+		}
+	}
+}
+
+@include for-very-small-desktop {
+	.footer {
+
+		&__top {
+			.container {
+				flex-direction: column;
+			}
+		}
+
+		&__container {}
+
+		&__column {
+			text-align: center;
+			padding-right: 0;
+
+			&:not(:last-child) {
+
+				margin-bottom: 30px;
+			}
+		}
+
+		&__column-title {
+			margin-bottom: 15px;
+		}
+
+		&__link {}
+
+		&__bottom {}
+
+		&__copyrigt {}
+	}
+
+	.social {
+		justify-content: center;
+
+		&__item {
+			margin: 0 12px;
+		}
+	}
+
+}
+
+@include for-phone-only {
+	.footer {
+		&__top {
+			padding: 45px 0;
+		}
+
+		&__column {
+
+			&:not(:last-child) {
+
+				margin-bottom: 24px;
+			}
+		}
+
+		&__link {
+			margin-bottom: 5px;
+		}
+
+		&__bottom {
+			.container {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		&__copyrigt {
+			margin-bottom: 4px;
+			text-align: center;
+			line-height: 1.15;
+		}
+	}
+
+	.social {
+		justify-content: center;
+
+		&__item {
+			margin: 0 12px;
+		}
+	}
+}
