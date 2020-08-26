@@ -35,8 +35,6 @@
 		color: $default-text-color;
 		font-size: 1.9rem;
 	}
-
-	&__btn {}
 }
 
 @include for-very-small-desktop {
@@ -51,12 +49,6 @@
 			margin-right: 0;
 			margin-bottom: 30px;
 		}
-
-		&__title {}
-
-		&__subtitle {}
-
-		&__btn {}
 	}
 
 }
