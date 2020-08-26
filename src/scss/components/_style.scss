@@ -71,11 +71,18 @@
 	text-align: center;
 	font-weight: 500;
 	font-size: 2rem;
+	line-height: 1.1;
 	color: $default-text-color;
 	background-color: $color-2;
 	@include transition(.4s);
 
 	&:hover {
 		background-color: $color-4;
+	}
+}
+
+@include for-phone-only {
+	.btn {
+		font-size: 1.6rem;
 	}
 }
