@@ -46,6 +46,12 @@
 	font-size: 3rem;
 }
 
+@include for-phone-only {
+	.title-block {
+		font-size: 2.8rem !important;
+	}
+}
+
 /* =========== EMPTY =========== */
 .empty {
 	opacity: 0;
