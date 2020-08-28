@@ -73,8 +73,6 @@ $(function () {
 
 
 
-
-
 	hamburger.on('click', toggleMenu);
 
 	$(window).resize(function () {

@@ -1,0 +1,51 @@
+.contacts {
+	padding: 42px 0 60px;
+
+	&__title {
+		font-size: 3rem;
+		margin-bottom: 50px;
+	}
+
+	&__box {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}
+
+.contacts-info {
+
+	&__block {}
+
+	&__block-title {
+		font-size: 1.8rem;
+		line-height: 1.5;
+		font-weight: 700;
+		margin-bottom: 15px;
+	}
+
+	&__item {}
+
+	&__jobs-time {}
+}
+
+.contacts-phones {
+
+	&__item {}
+}
+
+.contacts-emails {
+
+	&__item {}
+}
+
+.contacts-callback {
+
+	&__title {}
+
+	&__label {}
+
+	&__field-name {}
+
+	&__button {}
+}
