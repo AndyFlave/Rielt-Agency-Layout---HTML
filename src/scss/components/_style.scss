@@ -23,8 +23,9 @@
 	}
 }
 
-/* =========== PHONES ICON =========== */
-.phones-icon {
+/* =========== ADD ICON =========== */
+.phones-icon,
+.emails-icon {
 	position: relative;
 	padding-left: 24px;
 
@@ -36,7 +37,18 @@
 		width: 14px;
 		height: 14px;
 		@include translate(-50%, -50%);
+	}
+}
+
+.phones-icon {
+	&:before {
 		background-image: url(../img/tel.svg) no-repeat center/contain;
+	}
+}
+
+.emails-icon {
+	&:before {
+		background-image: url(../img/email-icon.svg) no-repeat center/contain;
 	}
 }
 
@@ -129,4 +141,16 @@ h3 {
 		color: $color-text-4;
 		text-decoration: underline;
 	}
+}
+
+
+/* =========== FIELDS - INPUTS =========== */
+.field {
+	outline: none;
+	background-color: $color-8;
+	border: 1px solid $color-12;
+	padding: 15px 15px;
+	font-size: 1.6rem;
+	line-height: 1.15;
+	@include border-radius(5px);
 }

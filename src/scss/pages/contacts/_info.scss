@@ -8,44 +8,107 @@
 
 	&__box {
 		display: flex;
-		align-items: flex-start;
 		justify-content: space-between;
 	}
 }
 
 .contacts-info {
+	max-width: 425px;
+	width: 100%;
+	padding: 36px 40px;
+	color: $color-text-3;
+	border: 1px solid $color-12;
 
-	&__block {}
+	&__block {
+		padding-bottom: 25px;
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $color-12;
+		}
+
+		&:not(:first-child) {
+			padding-top: 25px;
+		}
+	}
 
 	&__block-title {
 		font-size: 1.8rem;
-		line-height: 1.5;
+		line-height: 1.15;
 		font-weight: 700;
 		margin-bottom: 15px;
 	}
 
-	&__item {}
+	&__item {
+		font-size: 1.8rem;
+		line-height: 1.15;
 
-	&__jobs-time {}
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+
+	&__jobs-time {
+		font-size: 1.6rem;
+		line-height: 1.4;
+	}
 }
 
 .contacts-phones {
+	display: flex;
+	flex-direction: column;
 
-	&__item {}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 .contacts-emails {
+	display: flex;
+	flex-direction: column;
 
-	&__item {}
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
 }
 
 .contacts-callback {
+	border: 1px solid $color-12;
+	padding: 30px 100px;
+	width: 50%;
+	margin-left: 25px;
+	text-align: center;
 
-	&__title {}
+	&__title {
+		font-size: 3rem;
+		font-weight: 700;
+		margin-bottom: 45px;
+		text-align: center;
+	}
 
-	&__label {}
+	&__label {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 20px;
+		text-align: left;
+	}
 
-	&__field-name {}
+	&__field-name {
+		display: inline-block;
+		color: $color-text-3;
+		margin-bottom: 12px;
+		font-size: 1.6rem;
+		line-height: 1.1;
+		font-weight: 500;
+	}
 
-	&__button {}
+	&__button {
+		outline: none;
+		border: none;
+		cursor: pointer;
+		margin-top: 45px;
+	}
 }
