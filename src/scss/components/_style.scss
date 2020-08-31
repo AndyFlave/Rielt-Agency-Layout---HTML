@@ -1,156 +1,166 @@
 /* =========== DROP ARROW =========== */
 .drop-arrow {
-	position: relative;
-	padding-right: 22px;
-	cursor: pointer;
-	line-height: 1.2;
+  position: relative;
+  padding-right: 22px;
+  cursor: pointer;
+  line-height: 1.2;
 
-	&:after {
-		content: '';
-		position: absolute;
-		top: 50%;
-		right: -7px;
-		width: 13px;
-		height: 8px;
-		@include translate(-50%, -50%);
-		background-image: url(../img/drop-arrow.svg) no-repeat center/contain;
-	}
+  &:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -7px;
+    width: 13px;
+    height: 8px;
+    @include translate(-50%, -50%);
+    background-image: url(../img/drop-arrow.svg) no-repeat center/contain;
+  }
 }
 
 @include for-very-small-desktop {
-	.drop-arrow {
-		padding-right: 18px;
-	}
+  .drop-arrow {
+    padding-right: 18px;
+  }
 }
 
 /* =========== ADD ICON =========== */
 .phones-icon,
 .emails-icon {
-	position: relative;
-	padding-left: 24px;
+  position: relative;
+  padding-left: 24px;
 
-	&:before {
-		content: '';
-		position: absolute;
-		left: 8px;
-		top: 50%;
-		width: 14px;
-		height: 14px;
-		@include translate(-50%, -50%);
-	}
+  &:before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    width: 14px;
+    height: 14px;
+    @include translate(-50%, -50%);
+  }
 }
 
 .phones-icon {
-	&:before {
-		background-image: url(../img/tel.svg) no-repeat center/contain;
-	}
+  &:before {
+    background-image: url(../img/tel.svg) no-repeat center/contain;
+  }
 }
 
 .emails-icon {
-	&:before {
-		background-image: url(../img/email-icon.svg) no-repeat center/contain;
-	}
+  &:before {
+    background-image: url(../img/email-icon.svg) no-repeat center/contain;
+  }
 }
 
 /* =========== TITLES =========== */
 h1 {
-	font-size: 3.5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
-	font-size: 3rem;
+  font-size: 3rem;
 }
 
 h3 {
-	font-size: 2rem;
+  font-size: 2rem;
 }
 
 @include for-very-small-desktop {
-	h3 {
-		font-size: 1.8rem;
-	}
+  h3 {
+    font-size: 1.8rem;
+  }
 }
 
 @include for-phone-only {
-	.h2 {
-		font-size: 2.8rem !important;
-	}
+  .h2 {
+    font-size: 2.8rem !important;
+  }
 }
-
 
 /* =========== TITLE BLOCK =========== */
 .title-block {
-	font-weight: 700;
-	font-size: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 @include for-phone-only {
-	.title-block {
-		font-size: 2.8rem !important;
-	}
+  .title-block {
+    font-size: 2.8rem !important;
+  }
 }
 
 /* =========== EMPTY =========== */
 .empty {
-	opacity: 0;
-	visibility: hidden;
-	height: 0 !important;
-	max-height: 0 !important;
-	min-height: 0 !important;
-	padding-bottom: 0 !important;
-	padding-top: 0 !important;
-	margin-top: 0 !important;
-	margin-bottom: 0 !important;
+  opacity: 0;
+  visibility: hidden;
+  height: 0 !important;
+  max-height: 0 !important;
+  min-height: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }
 
 /* =========== JUSTFY CONTENT CENTER =========== */
 .justify-content-center {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 /* =========== BTN =========== */
 .btn {
-	padding: 15px 30px;
-	text-align: center;
-	font-weight: 500;
-	font-size: 2rem;
-	line-height: 1.1;
-	color: $default-text-color;
-	background-color: $color-2;
-	@include transition(.4s);
+  padding: 15px 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.1;
+  color: $default-text-color;
+  background-color: $color-2;
+  @include transition(0.4s);
 
-	&:hover {
-		background-color: $color-4;
-	}
+  &:hover {
+    background-color: $color-4;
+  }
 }
 
 @include for-phone-only {
-	.btn {
-		font-size: 1.6rem;
-	}
+  .btn {
+    font-size: 1.6rem;
+  }
 }
 
 /* =========== POLITICS LINK MODAL =========== */
 .politics-link-modal {
-	font-size: 1.4rem;
-	color: $color-text-2;
-	@include transition(.4s);
+  font-size: 1.4rem;
+  color: $color-text-2;
+  @include transition(0.4s);
 
-	&:hover {
-		color: $color-text-4;
-		text-decoration: underline;
-	}
+  &:hover {
+    color: $color-text-4;
+    text-decoration: underline;
+  }
 }
-
 
 /* =========== FIELDS - INPUTS =========== */
 .field {
-	outline: none;
-	background-color: $color-8;
-	border: 1px solid $color-12;
-	padding: 15px 15px;
-	font-size: 1.6rem;
-	line-height: 1.15;
-	@include border-radius(5px);
+  outline: none;
+  background-color: $color-8;
+  border: 1px solid $color-12;
+  padding: 15px;
+  font-size: 1.6rem;
+  line-height: 1.15;
+  @include border-radius(5px);
+}
+
+@include for-very-small-desktop {
+  .field {
+    padding: 12px;
+  }
+}
+
+@include for-phone-only {
+  .field {
+    padding: 10px 12px;
+  }
 }

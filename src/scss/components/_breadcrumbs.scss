@@ -1,0 +1,23 @@
+.breadcrumbs {
+	padding: 22px 0;
+	color: $color-text-3;
+	font-size: 1.2rem;
+	line-height: 1.2;
+
+	&__main {}
+
+	&__separator {
+		display: inline-block;
+		margin: 0 5px;
+	}
+
+	&__current {
+		color: $color-text-9;
+	}
+}
+
+@include for-phone-only {
+	.breadcrumbs {
+		padding: 16px 0;
+	}
+}

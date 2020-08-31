@@ -22,6 +22,14 @@ $(function () {
 		}
 	}
 
+	function headerPageStyle() {
+		if (window.location.href !== 'http://localhost:3000/') {
+			$('header').addClass('header-page')
+		}
+	}
+
+	headerPageStyle()
+
 
 	function AppendContentMenu(elemClass, boxClass) {
 		this.elem = $(elemClass);

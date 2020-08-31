@@ -1,114 +1,252 @@
 .contacts {
-	padding: 42px 0 60px;
+  padding: 15px 0 60px;
 
-	&__title {
-		font-size: 3rem;
-		margin-bottom: 50px;
-	}
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+  }
 
-	&__box {
-		display: flex;
-		justify-content: space-between;
-	}
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .contacts-info {
-	max-width: 425px;
-	width: 100%;
-	padding: 36px 40px;
-	color: $color-text-3;
-	border: 1px solid $color-12;
+  max-width: 425px;
+  width: 100%;
+  padding: 36px 40px;
+  color: $color-text-3;
+  border: 1px solid $color-12;
 
-	&__block {
-		padding-bottom: 25px;
+  &__block {
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-12;
+      padding-bottom: 25px;
+    }
 
-		&:not(:last-child) {
-			border-bottom: 1px solid $color-12;
-		}
+    &:not(:first-child) {
+      padding-top: 25px;
+    }
+  }
 
-		&:not(:first-child) {
-			padding-top: 25px;
-		}
-	}
+  &__block-title {
+    font-size: 1.8rem;
+    line-height: 1.15;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
 
-	&__block-title {
-		font-size: 1.8rem;
-		line-height: 1.15;
-		font-weight: 700;
-		margin-bottom: 15px;
-	}
+  &__item {
+    font-size: 1.8rem;
+    line-height: 1.15;
 
-	&__item {
-		font-size: 1.8rem;
-		line-height: 1.15;
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
 
-		&:not(:last-child) {
-			margin-bottom: 8px;
-		}
-	}
-
-	&__jobs-time {
-		font-size: 1.6rem;
-		line-height: 1.4;
-	}
+  &__jobs-time {
+    font-size: 1.6rem;
+    line-height: 1.4;
+  }
 }
 
 .contacts-phones {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	&__item {
-		&:not(:last-child) {
-			margin-bottom: 5px;
-		}
-	}
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .contacts-emails {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-	&__item {
-		&:not(:last-child) {
-			margin-bottom: 5px;
-		}
-	}
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
 }
 
 .contacts-callback {
-	border: 1px solid $color-12;
-	padding: 30px 100px;
-	width: 50%;
-	margin-left: 25px;
-	text-align: center;
+  border: 1px solid $color-12;
+  padding: 30px 100px;
+  width: 50%;
+  margin-left: 25px;
+  text-align: center;
 
-	&__title {
-		font-size: 3rem;
-		font-weight: 700;
-		margin-bottom: 45px;
-		text-align: center;
-	}
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 45px;
+    text-align: center;
+  }
 
-	&__label {
-		display: flex;
-		flex-direction: column;
-		margin-bottom: 20px;
-		text-align: left;
-	}
+  &__label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    text-align: left;
+  }
 
-	&__field-name {
-		display: inline-block;
-		color: $color-text-3;
-		margin-bottom: 12px;
-		font-size: 1.6rem;
-		line-height: 1.1;
-		font-weight: 500;
-	}
+  &__field-name {
+    display: inline-block;
+    color: $color-text-3;
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    font-weight: 500;
+  }
 
-	&__button {
-		outline: none;
-		border: none;
-		cursor: pointer;
-		margin-top: 45px;
-	}
+  &__button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 45px;
+  }
+}
+
+@include for-very-small-desktop {
+  .contacts-info {
+    padding: 30px;
+    max-width: 100%;
+    width: 50%;
+
+    &__block {
+      &:not(:last-child) {
+        padding-bottom: 20px;
+      }
+
+      &:not(:first-child) {
+        padding-top: 20px;
+      }
+    }
+
+    &__block-title {}
+
+    &__item {}
+
+    &__jobs-time {}
+
+    &__social {
+      justify-content: flex-start;
+
+      a {
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .contacts-callback {
+    padding: 30px;
+
+    &__title {
+      font-size: 2.8rem;
+    }
+
+    &__label {}
+
+    &__field-name {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+
+    &__button {
+      margin-top: 25px;
+    }
+  }
+}
+
+@include for-phone-only {
+  .contacts {
+    padding-top: 0;
+
+    &__title {
+      margin-bottom: 30px;
+      font-size: 2.8rem;
+    }
+
+    &__box {
+      flex-direction: column;
+    }
+  }
+
+
+  .contacts-phones {
+
+    &__item {
+      &:not(:last-child) {}
+    }
+  }
+
+  .contacts-emails {
+
+    &__item {
+      &:not(:last-child) {}
+    }
+  }
+
+  .contacts-info {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+
+    &__block {
+      &:not(:last-child) {
+        padding-bottom: 15px;
+      }
+
+      &:not(:first-child) {
+        padding-top: 15px;
+      }
+    }
+
+    &__block-title {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    &__item {
+      font-size: 1.4rem;
+    }
+
+    &__jobs-time {}
+
+    &__social {
+      a {
+        &:first-child {}
+      }
+    }
+  }
+
+  .contacts-callback {
+    padding: 20px;
+    margin-left: 0;
+    width: 100%;
+
+    &__title {
+      font-size: 2.2rem;
+      margin-bottom: 25px;
+    }
+
+    &__label {}
+
+    &__field-name {
+      font-size: 1.2rem;
+      margin-bottom: 5px;
+    }
+
+    &__button {
+      margin-top: 15px;
+      width: 100%;
+    }
+  }
 }
