@@ -36,9 +36,7 @@ $(function () {
 		this.appendMenu = function () {
 			if ($(window).width() < 768 && !this.childrenBox.is(this.elem)) {
 				this.elem.clone().appendTo(this.box);
-				// $('.header').find(this.elem).detach();
 			} else if ($(window).width() >= 768) {
-				// this.elem.parent().appendTo();
 				this.childrenBox.remove();
 			}
 		}
@@ -73,7 +71,6 @@ $(function () {
 		margin: 0,
 		items: 1,
 		dots: false
-		// dotsContainer: $(this).find('.catalog__item-dots')
 	})
 
 
