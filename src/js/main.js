@@ -2,9 +2,7 @@ $(function () {
 	let hamburger = $('.hamburger');
 	let mobileMenu = $('.mobile-menu');
 
-	function toogleClassHamburger() {
-		hamburger.toggleClass('active')
-	}
+	const toogleClassHamburger = () => hamburger.toggleClass('active')
 
 	function toggleClassHtml() {
 		$('html').toggleClass('active');
