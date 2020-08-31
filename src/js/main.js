@@ -2,25 +2,27 @@ $(function () {
 	let hamburger = $('.hamburger');
 	let mobileMenu = $('.mobile-menu');
 
+
+
+
 	const toogleClassHamburger = () => hamburger.toggleClass('active')
 
-	function toggleClassHtml() {
-		$('html').toggleClass('active');
-	}
+	const toggleClassHtml = () => $('html').toggleClass('active')
 
-	function toggleMenu() {
+	const toggleMenu = () => {
 		toogleClassHamburger();
 		toggleClassHtml();
 	}
 
-	function closeMenu() {
+	const closeMenu = () => {
 		if ($(window).width() >= 768) {
 			hamburger.removeClass('active')
 			$('html').removeClass('active');
 		}
 	}
 
-	function headerPageStyle() {
+
+	const headerPageStyle = () => {
 		if (window.location.href !== 'http://localhost:3000/') {
 			$('header').addClass('header-page')
 		}
@@ -81,7 +83,7 @@ $(function () {
 
 	hamburger.on('click', toggleMenu);
 
-	$(window).resize(function () {
+	$(window).resize(() => {
 		closeMenu();
 
 		new AppendContentMenu('.logotype', '.mobile-menu').appendMenu();
