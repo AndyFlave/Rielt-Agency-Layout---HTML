@@ -1,0 +1,143 @@
+.vacancies {
+	padding-bottom: 60px;
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: calc(100% + 28px);
+		margin-left: -14px;
+	}
+
+	&__item {
+		margin: 0 14px 28px;
+	}
+}
+
+.vacancies-item {
+	padding: 36px 40px;
+	width: 400px;
+	max-width: 100%;
+	flex-grow: 1;
+	border: 1px solid $color-12;
+	@include border-radius(5px);
+
+	&__header {
+		padding-bottom: 22px;
+		border-bottom: 1px solid $color-12;
+	}
+
+	&__heading {
+		font-size: 1.8rem;
+		border-width: 700px;
+		margin-bottom: 16px;
+		color: $color-text-3;
+	}
+
+	&__param {
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 1.2;
+		color: $color-text-3;
+	}
+
+	&__param-item {
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__body {
+		padding-top: 22px;
+	}
+
+	&__body-heading {
+		font-size: 1.6rem;
+		font-weight: 700;
+		margin-bottom: 14px;
+	}
+
+	&__body-description {
+		font-weight: 500;
+		font-size: 1.6rem;
+		line-height: 1.2;
+		color: $color-text-3;
+		margin-bottom: 30px;
+	}
+
+	&__button {
+		display: inline-block;
+		width: 260px;
+	}
+}
+
+
+@include for-very-small-desktop {
+	.vacancies-item {
+		width: 330px;
+		padding: 20px;
+
+		&__header {}
+
+		&__heading {}
+
+		&__param {
+			font-size: 1.6rem;
+		}
+
+		&__param-item {}
+
+		&__body {}
+
+		&__body-heading {}
+
+		&__body-description {}
+
+		&__button {}
+	}
+}
+
+@include for-phone-only {
+	.vacancies {
+		padding-bottom: 20px;
+
+		&__title {
+			margin-bottom: 30px;
+		}
+	}
+
+	.vacancies-item {
+		width: 100%;
+
+		&__header {}
+
+		&__heading {
+			margin-bottom: 14px;
+		}
+
+		&__param {
+			font-size: 1.4rem;
+		}
+
+		&__param-item {}
+
+		&__body {}
+
+		&__body-heading {
+			margin-bottom: 12px;
+		}
+
+		&__body-description {
+			font-size: 1.4rem;
+		}
+
+		&__button {
+			width: 100%;
+		}
+	}
+
+}

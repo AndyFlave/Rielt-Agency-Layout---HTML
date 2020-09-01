@@ -77,6 +77,17 @@ h3 {
   }
 }
 
+/* =========== PAGE TITLE =========== */
+.page-title {
+  font-size: 3rem;
+}
+
+@include for-phone-only {
+  .page-title {
+    font-size: 2.8rem;
+  }
+}
+
 /* =========== TITLE BLOCK =========== */
 .title-block {
   font-weight: 700;

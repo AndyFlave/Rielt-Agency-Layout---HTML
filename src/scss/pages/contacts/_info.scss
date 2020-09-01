@@ -1,8 +1,7 @@
 .contacts {
-  padding: 15px 0 60px;
+  padding: 0 0 60px;
 
   &__title {
-    font-size: 3rem;
     margin-bottom: 50px;
   }
 
@@ -128,12 +127,6 @@
       }
     }
 
-    &__block-title {}
-
-    &__item {}
-
-    &__jobs-time {}
-
     &__social {
       justify-content: flex-start;
 
@@ -152,8 +145,6 @@
       font-size: 2.8rem;
     }
 
-    &__label {}
-
     &__field-name {
       font-size: 1.4rem;
       margin-bottom: 10px;
@@ -171,26 +162,10 @@
 
     &__title {
       margin-bottom: 30px;
-      font-size: 2.8rem;
     }
 
     &__box {
       flex-direction: column;
-    }
-  }
-
-
-  .contacts-phones {
-
-    &__item {
-      &:not(:last-child) {}
-    }
-  }
-
-  .contacts-emails {
-
-    &__item {
-      &:not(:last-child) {}
     }
   }
 
@@ -217,14 +192,6 @@
     &__item {
       font-size: 1.4rem;
     }
-
-    &__jobs-time {}
-
-    &__social {
-      a {
-        &:first-child {}
-      }
-    }
   }
 
   .contacts-callback {
@@ -236,8 +203,6 @@
       font-size: 2.2rem;
       margin-bottom: 25px;
     }
-
-    &__label {}
 
     &__field-name {
       font-size: 1.2rem;

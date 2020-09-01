@@ -13,7 +13,7 @@ $(function () {
 
 	const closeMenu = () => {
 		if ($(window).width() >= 768) {
-			hamburger.removeClass('active')
+			hamburger.removeClass('active');
 			$('html').removeClass('active');
 		}
 	}
@@ -21,12 +21,25 @@ $(function () {
 
 	const headerPageStyle = () => {
 		if (window.location.href !== 'http://localhost:3000/') {
-			$('header').addClass('header-page')
+			$('header').addClass('header-page');
 		}
 	}
 
-	headerPageStyle()
+	headerPageStyle();
 
+	const setBreadcrumbsCurrentLink = () => {
+		let pathname = window.location.pathname;
+		let currentLink = $('.breadcrumbs__current');
+		if (pathname == '/catalog.html') {
+			currentLink.text('Каталог')
+		} else if (pathname == '/contacts.html') {
+			currentLink.text('Контакты')
+		} else if (pathname == '/vacancies.html') {
+			currentLink.text('Вакансии')
+		}
+	}
+
+	setBreadcrumbsCurrentLink();
 
 	function AppendContentMenu(elemClass, boxClass) {
 		this.elem = $(elemClass);
@@ -74,6 +87,7 @@ $(function () {
 	})
 
 
+	// EVENTS
 
 	hamburger.on('click', toggleMenu);
 
