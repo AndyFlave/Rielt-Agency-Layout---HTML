@@ -175,3 +175,66 @@ h3 {
     padding: 10px 12px;
   }
 }
+
+/* =========== CUSTOM CHECKBOX =========== */
+.custom-checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &__input {
+    display: none;
+
+    &:checked+.custom-checkbox__unit {
+      background: url(../img/checkbox.svg) no-repeat center/12px $color-2;
+      border: 1px solid $color-2;
+    }
+  }
+
+  &__unit {
+    display: inline-block;
+    min-width: 18px;
+    width: 18px;
+    height: 18px;
+    @include border-radius(5px);
+    border: 1px solid $color-12;
+  }
+}
+
+
+/* =========== CUSTOM SELECT =========== */
+.custom-select {
+  position: relative;
+  min-width: 130px;
+
+  &__head {
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    display: none;
+  }
+
+  &__list {
+    display: none;
+    border-top: 1px solid $color-12;
+    position: absolute;
+    top: 100%;
+    left: -5px;
+    width: max-content;
+    background-color: $default-color;
+    padding: 6px 5px;
+    @include border-radius(5px);
+    z-index: 99;
+  }
+
+  &__list-item {
+    font-size: 1.4rem;
+    line-height: 1.15;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 2px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.filter {
+	padding: 35px 20px;
+	border: 1px solid $color-12;
+	@include border-radius(5px);
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-right: 45px;
+	}
+
+	&__inside-wrapper {
+		display: flex;
+	}
+
+	&__item {
+		display: inline-flex;
+		align-items: center;
+		cursor: pointer;
+
+		&:not(:last-child) {
+			margin-bottom: 12px;
+		}
+	}
+
+	&__checkbox {
+		margin-right: 10px;
+	}
+
+	&__item-text {
+		font-size: 1.6rem;
+		line-height: 1.15;
+	}
+
+	&__separator {
+		height: 1px;
+		width: 100%;
+		background-color: $color-12;
+		margin: 10px 0 22px;
+	}
+
+	&__select {
+		margin-bottom: 12px;
+	}
+}

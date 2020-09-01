@@ -60,12 +60,14 @@ let libsJsArray = [
   "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js",
   "node_modules/jquery-mask-plugin/dist/jquery.mask.min.js",
   "node_modules/owl.carousel/dist/owl.carousel.min.js",
+  "node_modules/nouislider/distribute/nouislider.min.js",
   "node_modules/aos/dist/aos.js",
 ];
 
 let libsCssArray = [
   "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css",
   "node_modules/owl.carousel/dist/assets/owl.carousel.min.css",
+  "node_modules/nouislider/distribute/nouislider.min.css",
   "node_modules/aos/dist/aos.css",
 ];
 

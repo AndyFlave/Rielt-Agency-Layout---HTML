@@ -76,6 +76,49 @@ $(function () {
 	new CustomHover('.city', '.city__item_drop').hover();
 
 
+	// custom select
+	let triggerSelect = $('.custom-select .custom-select__head');
+	let elementsSelect = $('.custom-select__list-item');
+
+	const showSelectList = event => {
+		let target = $(event.target);
+
+		if (target.parent().hasClass('open')) {
+			target.parent().removeClass('open');
+			target.next().slideUp();
+		} else {
+			$('.custom-select').removeClass('open');
+			$('.custom-select__list').slideUp();
+			target.parent().addClass('open');
+			target.next().slideDown();
+		}
+	}
+
+	const closeSelectList = () => {
+		$('.custom-select').removeClass('open');
+		$('.custom-select__list').slideUp();
+	}
+
+	const renderSelectInput = () => {
+		$('.custom-select__list-item_current').each(function (index, el) {
+			$(this).parent()
+				.parent()
+				.find('.custom-select__input')
+				.attr('value', $(this).text())
+				.next('.custom-select__head').text(`${$(this).text()}`);
+			closeSelectList();
+		});
+	}
+	renderSelectInput();
+
+	const setClassItemsList = event => {
+		let target = $(event.target);
+		target.siblings().removeClass('custom-select__list-item_current');
+		target.addClass('custom-select__list-item_current');
+		renderSelectInput();
+	}
+
+
 	$('.catalog__slider').owlCarousel({
 		loop: true,
 		autoplay: true,
@@ -90,6 +133,9 @@ $(function () {
 	// EVENTS
 
 	hamburger.on('click', toggleMenu);
+
+	triggerSelect.on('click', showSelectList);
+	elementsSelect.on('click', setClassItemsList)
 
 	$(window).resize(() => {
 		closeMenu();
