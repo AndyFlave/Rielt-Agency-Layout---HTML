@@ -81,23 +81,9 @@
 		width: 330px;
 		padding: 20px;
 
-		&__header {}
-
-		&__heading {}
-
 		&__param {
 			font-size: 1.6rem;
 		}
-
-		&__param-item {}
-
-		&__body {}
-
-		&__body-heading {}
-
-		&__body-description {}
-
-		&__button {}
 	}
 }
 
@@ -113,8 +99,6 @@
 	.vacancies-item {
 		width: 100%;
 
-		&__header {}
-
 		&__heading {
 			margin-bottom: 14px;
 		}
@@ -122,10 +106,6 @@
 		&__param {
 			font-size: 1.4rem;
 		}
-
-		&__param-item {}
-
-		&__body {}
 
 		&__body-heading {
 			margin-bottom: 12px;
