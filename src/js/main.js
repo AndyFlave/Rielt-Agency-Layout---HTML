@@ -132,10 +132,11 @@ $(function () {
 
 	// EVENTS
 
-	hamburger.on('click', toggleMenu);
-
-	triggerSelect.on('click', showSelectList);
+	hamburger.on('click', toggleMenu)
+	triggerSelect.on('click', showSelectList)
 	elementsSelect.on('click', setClassItemsList)
+
+	$('.catalog-item__button').on('click', e => e.preventDefault())
 
 	$(window).resize(() => {
 		closeMenu();

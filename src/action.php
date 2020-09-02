@@ -9,7 +9,9 @@
 ?>
 <h1>
 	<? 
-	echo $a;
+	if ($a){
+		echo '<h1>TRUE</h1>';
+	}
 	echo $b; 
 	echo $c; 
 	echo $d; 

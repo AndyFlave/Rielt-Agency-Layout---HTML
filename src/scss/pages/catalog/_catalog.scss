@@ -1,5 +1,65 @@
 .catalog-page {
+	padding-bottom: 60px;
+
 	&__title {
 		margin-bottom: 50px;
+	}
+
+	&__content {
+		margin-top: 58px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+	}
+
+	&__item {
+		margin: 0 15px 50px;
+	}
+}
+
+.catalog-item {
+	width: 260px;
+	max-width: 100%;
+	flex-grow: 1;
+
+	&__info {
+		margin-top: 20px;
+	}
+
+	&__img {
+		max-width: 100%;
+		width: 100%;
+		min-height: 220px;
+		object-fit: cover;
+	}
+
+	&__header {
+		font-size: 1.6rem;
+		line-height: 1.15;
+		font-weight: 500;
+	}
+
+	&__separator {
+		width: 100%;
+		height: 1px;
+		margin: 18px 0;
+		background-color: $color-12;
+	}
+
+	&__footer {
+		padding-top: 0;
+		margin-bottom: 20px;
+	}
+
+	&__description {
+		margin-bottom: 8px;
+	}
+
+	&__geo {}
+
+	&__button {
+		width: 100%;
 	}
 }

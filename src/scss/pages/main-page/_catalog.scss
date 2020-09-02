@@ -82,15 +82,21 @@
 		}
 	}
 
-	&__item-footer {
-		padding-top: 16px;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-end;
+	&__btn {
+		max-width: 374px;
 		width: 100%;
+		margin-top: 15px;
 	}
+}
 
-	&__item-price {
+.catalog-footer {
+	padding-top: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100%;
+
+	&__price {
 		font-size: 2rem;
 		font-weight: 700;
 		color: $color-3;
@@ -101,7 +107,7 @@
 		}
 	}
 
-	&__item-link {
+	&__link {
 		font-size: 1.4rem;
 		line-height: 1.1;
 		font-weight: 700;
@@ -120,13 +126,8 @@
 			@include border-radius(100%);
 		}
 	}
-
-	&__btn {
-		max-width: 374px;
-		width: 100%;
-		margin-top: 15px;
-	}
 }
+
 
 @include for-phone-only {
 	.catalog {
