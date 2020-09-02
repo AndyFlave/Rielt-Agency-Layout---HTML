@@ -130,6 +130,40 @@ $(function () {
 	})
 
 
+	// const setNouslider = () => {
+	// 	let slider = document.querySelector('.slider-row__unit');
+
+
+	// 	if (slider) {
+	// 		noUiSlider.create(slider, {
+	// 			start: [20, 80],
+	// 			connect: true,
+	// 			range: {
+	// 				'min': 0,
+	// 				'max': 100
+	// 			}
+	// 		});
+	// 	}
+	// }
+
+	const setNouslider = () => {
+		let sliders = document.querySelectorAll('.slider-row__unit');
+
+		[].slice.call(sliders).forEach(function (slider, index) {
+			noUiSlider.create(slider, {
+				start: [20, 80],
+				connect: true,
+				range: {
+					'min': 0,
+					'max': 100
+				}
+			})
+		})
+	}
+
+	setNouslider();
+
+
 	// EVENTS
 
 	hamburger.on('click', toggleMenu)
