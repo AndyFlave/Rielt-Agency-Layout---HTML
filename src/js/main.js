@@ -151,14 +151,28 @@ $(function () {
 		dots: false,
 		URLhashListener: true,
 		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 3
+			},
+			480: {
+				items: 4
+			},
+			600: {
+				items: 5,
+			}
+		}
 	})
 
-	$('.single-slider__bottom').on('changed.owl.carousel', function (event) {
+	window.location.hash = '';
+
+	$('.single-slider__bottom').on('changed.owl.carousel', event => {
 		let item = event.item.index;
 		let number = $(`.single-slider__bottom .owl-item:eq(${item}) .single-slider__bottom-img`).attr('data-number');
 
 		window.location.hash = `img-${number}`
-	})
+	});
+
 
 	$('.similar-appart__slider').owlCarousel({
 		loop: true,
@@ -166,11 +180,23 @@ $(function () {
 		autoplaySpeed: 2000,
 		autoplayTimeout: 4000,
 		margin: 20,
-		items: 4,
 		dots: false,
 		autoplayHoverPause: true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			480: {
+				items: 2
+			},
+			768: {
+				items: 3,
+			},
+			1080: {
+				items: 4,
+			}
+		}
 	})
-
 
 	const setNouslider = () => {
 		let sliders = document.querySelectorAll('.slider-row__unit');
@@ -192,9 +218,9 @@ $(function () {
 
 	// EVENTS
 
-	hamburger.on('click', toggleMenu)
-	triggerSelect.on('click', showSelectList)
-	elementsSelect.on('click', setClassItemsList)
+	hamburger.on('click', toggleMenu);
+	triggerSelect.on('click', showSelectList);
+	elementsSelect.on('click', setClassItemsList);
 
 	$('.catalog-item__button').on('click', e => e.preventDefault())
 

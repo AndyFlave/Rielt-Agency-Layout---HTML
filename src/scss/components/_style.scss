@@ -81,8 +81,8 @@ h3 {
 }
 
 @include for-phone-only {
-  .h2 {
-    font-size: 2.8rem !important;
+  h2 {
+    font-size: 2.4rem !important;
   }
 }
 
@@ -93,7 +93,7 @@ h3 {
 
 @include for-phone-only {
   .page-title {
-    font-size: 2.8rem;
+    font-size: 2.6rem;
   }
 }
 
@@ -332,7 +332,21 @@ h3 {
 .similar-appart {
   padding: 40px 0 60px;
 
+  &__item {
+    width: 100% !important;
+  }
+
   &__title {
     margin-bottom: 35px;
+  }
+}
+
+@include for-phone-only {
+  .similar-appart {
+    padding: 20px 0 45px;
+
+    &__title {
+      margin-bottom: 20px;
+    }
   }
 }
