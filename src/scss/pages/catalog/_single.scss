@@ -1,0 +1,139 @@
+.single-page {
+	padding-bottom: 35px;
+
+	&__title {
+		margin-bottom: 50px;
+	}
+
+	&__top {
+		display: flex;
+		position: relative;
+		margin-bottom: 50px;
+
+		&:after,
+		&:before {
+			content: '';
+			position: absolute;
+			right: 0;
+			border-right: 1px solid $color-12;
+			height: 50px;
+			width: 30px;
+			@include border-radius(2px);
+		}
+
+		&:after {
+			bottom: 0;
+			border-bottom: 1px solid $color-12;
+		}
+
+		&:before {
+			top: 0;
+			border-top: 1px solid $color-12;
+		}
+	}
+
+	&__info {
+		margin-left: 70px;
+	}
+
+	&__price {
+		font-weight: 700;
+		font-size: 3rem;
+		line-height: 1.15;
+		margin-bottom: 25px;
+		display: block;
+
+		&_sign {
+			font-size: 1.6rem;
+			line-height: 1.15;
+		}
+	}
+
+	&__param {
+		margin-bottom: 50px;
+	}
+
+
+	&__block-title {
+		margin-bottom: 25px;
+	}
+
+	&__separator {
+		background-color: $color-12;
+		width: 100%;
+		height: 1px;
+		margin: 30px 0;
+	}
+}
+
+.single-slider {
+	max-width: 650px;
+	width: 100%;
+
+	&__top {
+		margin-bottom: 10px;
+	}
+
+	&__top-img {
+		max-width: 100%;
+		width: 100%;
+		object-fit: cover;
+		min-height: 450px;
+		height: 450px;
+		@include border-radius(5px);
+	}
+
+	&__bottom {}
+
+	&__bottom-img {
+		max-width: 100%;
+		width: 100%;
+		min-height: 95px;
+		height: 95px;
+		object-fit: cover;
+		@include border-radius(5px);
+	}
+}
+
+.param-list {
+
+	&__item {
+		font-size: 1.6rem;
+		line-height: 1.15;
+
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__item-key {
+		font-weight: 600;
+		margin-right: 4px;
+		display: inline-block;
+	}
+
+	&__item-value {}
+}
+
+.single-call {
+
+	&__name {
+		font-weight: 600;
+		font-size: 2rem;
+		margin-bottom: 8px;
+	}
+
+	&__phone {
+		font-weight: 700;
+		font-size: 1.6rem;
+		margin-bottom: 18px;
+		display: block;
+	}
+
+	&__button {
+		width: 260px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}

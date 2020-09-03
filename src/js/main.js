@@ -129,29 +129,55 @@ $(function () {
 		dots: false
 	})
 
+	$('.single-slider__top').owlCarousel({
+		loop: true,
+		animateOut: 'fadeOut',
+		autoplaySpeed: 2000,
+		autoplayTimeout: 4000,
+		margin: 0,
+		items: 1,
+		dots: false,
+		mouseDrag: false,
+		touchDrag: false,
+	})
 
-	// const setNouslider = () => {
-	// 	let slider = document.querySelector('.slider-row__unit');
+	$('.single-slider__bottom').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		autoplayTimeout: 4000,
+		margin: 7,
+		items: 5,
+		dots: false,
+		URLhashListener: true,
+		autoplayHoverPause: true,
+	})
 
+	$('.single-slider__bottom').on('changed.owl.carousel', function (event) {
+		let item = event.item.index;
+		let number = $(`.single-slider__bottom .owl-item:eq(${item}) .single-slider__bottom-img`).attr('data-number');
 
-	// 	if (slider) {
-	// 		noUiSlider.create(slider, {
-	// 			start: [20, 80],
-	// 			connect: true,
-	// 			range: {
-	// 				'min': 0,
-	// 				'max': 100
-	// 			}
-	// 		});
-	// 	}
-	// }
+		window.location.hash = `img-${number}`
+	})
+
+	$('.similar-appart__slider').owlCarousel({
+		loop: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		autoplayTimeout: 4000,
+		margin: 20,
+		items: 4,
+		dots: false,
+		autoplayHoverPause: true,
+	})
+
 
 	const setNouslider = () => {
 		let sliders = document.querySelectorAll('.slider-row__unit');
 
 		[].slice.call(sliders).forEach(function (slider, index) {
 			noUiSlider.create(slider, {
-				start: [20, 80],
+				start: [0, 80],
 				connect: true,
 				range: {
 					'min': 0,

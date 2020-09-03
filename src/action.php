@@ -9,6 +9,7 @@
 ?>
 <h1>
 	<? 
+	var_dump($_POST);
 	if ($a){
 		echo '<h1>TRUE</h1>';
 	}

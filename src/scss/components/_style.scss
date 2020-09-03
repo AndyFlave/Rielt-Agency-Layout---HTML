@@ -138,6 +138,7 @@ h3 {
   color: $default-text-color;
   background-color: $color-2;
   @include transition(0.4s);
+  @include border-radius(2px);
   cursor: pointer;
   border: none;
   outline: none;
@@ -279,8 +280,7 @@ h3 {
 }
 
 
-// 
-
+/* =========== NOUSLIDER =========== */
 .slider-row {
   min-width: 225px;
   max-width: 225px;
@@ -324,5 +324,15 @@ h3 {
     &:before {
       content: none;
     }
+  }
+}
+
+
+/* =========== SIMILAR APPARTAMENTS =========== */
+.similar-appart {
+  padding: 40px 0 60px;
+
+  &__title {
+    margin-bottom: 35px;
   }
 }
