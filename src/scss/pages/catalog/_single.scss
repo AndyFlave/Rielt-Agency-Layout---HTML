@@ -83,8 +83,6 @@
 		@include border-radius(5px);
 	}
 
-	&__bottom {}
-
 	&__bottom-img {
 		max-width: 100%;
 		width: 100%;
@@ -111,8 +109,6 @@
 		margin-right: 4px;
 		display: inline-block;
 	}
-
-	&__item-value {}
 }
 
 .single-call {
@@ -164,8 +160,6 @@
 			margin-left: 0;
 		}
 
-		&__top-img {}
-
 		&__param {
 			margin-bottom: 20px;
 			display: flex;
@@ -181,21 +175,17 @@
 
 	.single-slider {
 
-		&__top {}
-
 		&__top-img {
 			min-height: 320px;
 			height: 320px;
 		}
-
-		&__bottom {}
-
-		&__bottom-img {}
 	}
 }
 
 @include for-phone-only {
 	.single-page {
+		padding-bottom: 15px;
+
 		&__title {
 			margin-bottom: 30px;
 		}
@@ -224,15 +214,9 @@
 
 	.single-slider {
 
-		&__top {}
-
 		&__top-img {
 			min-height: 220px;
 			height: 220px;
 		}
-
-		&__bottom {}
-
-		&__bottom-img {}
 	}
 }
