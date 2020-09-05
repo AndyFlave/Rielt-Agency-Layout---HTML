@@ -1,6 +1,7 @@
 $(function () {
 	let hamburger = $('.hamburger');
 	let mobileMenu = $('.mobile-menu');
+	let inputEvent = $('.input-event');
 
 	const toogleClassHamburger = () => hamburger.toggleClass('active')
 
@@ -105,6 +106,7 @@ $(function () {
 				.parent()
 				.find('.custom-select__input')
 				.attr('value', $(this).text())
+				.change()
 				.next('.custom-select__head').text(`${$(this).text()}`);
 			closeSelectList();
 		});
@@ -118,6 +120,15 @@ $(function () {
 		renderSelectInput();
 	}
 
+	const showAppartViews = (event) => {
+		let target = $(event.currentTarget);
+
+		if (target.val() === 'Квартиры') {
+			$('.appart-views').show();
+		} else {
+			$('.appart-views').hide();
+		}
+	}
 
 	$('.catalog__slider').owlCarousel({
 		loop: true,
@@ -198,22 +209,45 @@ $(function () {
 		}
 	})
 
+	$('.input-event').mask('00000000000')
+
+
 	const setNouslider = () => {
 		let sliders = document.querySelectorAll('.slider-row__unit');
 
 		[].slice.call(sliders).forEach(function (slider, index) {
 			noUiSlider.create(slider, {
-				start: [0, 80],
+				start: [0, 0],
 				connect: true,
 				range: {
 					'min': 0,
-					'max': 100
+					'max': 30000000,
+				},
+			})
+
+			slider.noUiSlider.set([null, 40000]);
+
+			slider.noUiSlider.on('slide', function (value, handle) {
+				let minElement = slider.nextElementSibling.children[0];
+				let maxElement = slider.nextElementSibling.children[1];
+				let elementValue = Math.round(value[handle]);
+				if (handle) {
+					maxElement.setAttribute('value', elementValue);
+					maxElement.value = elementValue;
+				} else {
+					minElement.setAttribute('value', elementValue);
+					minElement.value = elementValue;
 				}
 			})
 		})
 	}
-
 	setNouslider();
+
+
+	const setRangeSlider = event => {
+		let target = $(event.currentTarget)
+		target.attr('value', target.val());
+	}
 
 
 	// EVENTS
@@ -221,6 +255,8 @@ $(function () {
 	hamburger.on('click', toggleMenu);
 	triggerSelect.on('click', showSelectList);
 	elementsSelect.on('click', setClassItemsList);
+	inputEvent.on('input', setRangeSlider);
+	$('.custom-select_type').on('change', showAppartViews);
 
 	$('.catalog-item__button').on('click', e => e.preventDefault())
 

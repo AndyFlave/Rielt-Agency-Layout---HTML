@@ -293,11 +293,17 @@ h3 {
     justify-content: space-between;
     align-items: center;
     margin-top: 12px;
+    font-size: 1.4rem;
   }
 
-  &__prices-start {}
-
-  &__prices-end {}
+  &__prices-start,
+  &__prices-end {
+    max-width: 75px;
+    padding: 5px;
+    border: 1px solid $color-12;
+    outline: none;
+    line-height: 1.15;
+  }
 
   .noUi-target {
     height: 2px;
@@ -326,7 +332,6 @@ h3 {
     }
   }
 }
-
 
 /* =========== SIMILAR APPARTAMENTS =========== */
 .similar-appart {
