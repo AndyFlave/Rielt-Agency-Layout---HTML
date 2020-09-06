@@ -123,12 +123,14 @@ $(function () {
 	const showAppartViews = (event) => {
 		let target = $(event.currentTarget);
 
-		if (target.val() === 'Квартиры') {
+		if (target.val() === 'Квартиры' || target.val() === undefined) {
 			$('.appart-views').show();
 		} else {
 			$('.appart-views').hide();
 		}
 	}
+
+	showAppartViews($('.custom-select_type'));
 
 	$('.catalog__slider').owlCarousel({
 		loop: true,
@@ -249,6 +251,10 @@ $(function () {
 		target.attr('value', target.val());
 	}
 
+	const openAdditionalParam = (event) => {
+		event.preventDefault();
+		$('.filter__additional-content').slideToggle(400);
+	}
 
 	// EVENTS
 
@@ -257,6 +263,7 @@ $(function () {
 	elementsSelect.on('click', setClassItemsList);
 	inputEvent.on('input', setRangeSlider);
 	$('.custom-select_type').on('change', showAppartViews);
+	$('.filter__additional-btn').on('click', openAdditionalParam)
 
 	$('.catalog-item__button').on('click', e => e.preventDefault())
 

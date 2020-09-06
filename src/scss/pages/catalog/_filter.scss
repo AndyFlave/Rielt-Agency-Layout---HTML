@@ -1,5 +1,5 @@
 .filter {
-	padding: 35px 20px;
+	padding: 35px 20px 15px;
 	border: 1px solid $color-12;
 	@include border-radius(5px);
 
@@ -7,7 +7,10 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		// flex-grow: 1;
+
+		&:nth-child(3) {
+			min-width: 167px;
+		}
 
 		&:not(:last-child) {
 			margin-right: 40px;
@@ -17,6 +20,10 @@
 	&__inside-wrapper {
 		display: flex;
 		justify-content: space-between;
+	}
+
+	&__head {
+		font-weight: 600;
 	}
 
 	&__item {
@@ -46,7 +53,7 @@
 	}
 
 	&__select {
-		margin-bottom: 12px;
+		margin-bottom: 6px;
 	}
 
 	&__nouislider {
@@ -57,5 +64,39 @@
 
 	&__button {
 		width: 170px;
+	}
+
+	&__additional-content {
+		display: none;
+		padding-top: 15px;
+	}
+
+	&__additional-content-wrapper {
+		display: flex;
+		border-top: 1px solid $color-12;
+		padding-top: 20px;
+	}
+
+	&__additional-btn {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		appearance: none;
+		border: none;
+		outline: none;
+		background-color: none;
+		margin-top: 20px;
+		font-size: 1.4rem;
+		font-weight: 700;
+		cursor: pointer;
+
+		&:after {
+			content: '';
+			min-width: 18px;
+			width: 18px;
+			height: 10px;
+			background: url(../img/add-arrow.svg) no-repeat center/contain;
+			margin-top: 8px;
+		}
 	}
 }

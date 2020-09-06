@@ -222,6 +222,10 @@ h3 {
 
   &__head {
     margin-bottom: 5px;
+
+    &:after {
+      background: url(../img/select-arrow.svg) no-repeat center/contain;
+    }
   }
 
   &__input {
@@ -292,7 +296,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 12px;
+    margin-top: 15px;
     font-size: 1.4rem;
   }
 

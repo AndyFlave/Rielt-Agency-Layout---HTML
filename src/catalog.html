@@ -63,7 +63,7 @@
 
 					<div class="filter__column">
 						<div class="custom-select filter__select">
-							<input type="text" class="custom-select__input custom-select_type" value=""
+							<input type="text" class="custom-select__input custom-select_type" value="Квартиры"
 								name="select-type">
 							<div class="custom-select__head drop-arrow">Квартиры</div>
 							<div class="custom-select__list">
@@ -79,7 +79,7 @@
 							<input type="text" class="custom-select__input" value="" name="select-view">
 							<div class="custom-select__head drop-arrow">Студия</div>
 							<div class="custom-select__list">
-								<div class="custom-select__list-item custom-select__list-item_current">Студия</div>
+								<div class="custom-select__list-item custom-select__list-item_current">Студии</div>
 								<div class="custom-select__list-item">1-комнатные</div>
 								<div class="custom-select__list-item">2-комнатные</div>
 								<div class="custom-select__list-item">3-комнатные</div>
@@ -91,7 +91,7 @@
 					<div class="filter__column">
 
 						<div class="filter__nouislider">
-							<div class="filter__item">Стоимость</div>
+							<div class="filter__item filter__head">Стоимость</div>
 							<div class="slider-row">
 								<div class="slider-row__unit"></div>
 								<div class="slider-row__prices">
@@ -101,35 +101,55 @@
 							</div>
 						</div>
 
-						<!-- <div class="filter__nouislider">
-							<div class="filter__item">Площадь</div>
-							<div class="slider-row">
-								<div class="slider-row__unit"></div>
-								<div class="slider-row__prices">
-									<span class="slider__prices-start"></span>
-									<span class="slider__prices-end"></span>
-								</div>
-							</div>
-						</div> -->
-					</div>
 
-					<!-- <div class="filter__column">
-						<div class="filter__item">Район</div>
-						<div class="custom-select">
-							<input type="text" class="custom-select__input" value="">
-							<div class="custom-select__head drop-arrow">Центр</div>
-							<div class="custom-select__list">
-								<div class="custom-select__list-item custom-select__list-item_current">Центр</div>
-								<div class="custom-select__list-item">Лукьяново</div>
-								<div class="custom-select__list-item">Заречье</div>
-								<div class="custom-select__list-item">Бывалово</div>
-								<div class="custom-select__list-item">Водники</div>
-							</div>
-						</div>
-					</div> -->
+					</div>
 
 					<div class="filter__column">
 						<button type="submit" class="btn filter__button">Найти</button>
+					</div>
+				</div>
+
+				<div class="filter__additional">
+					<div class="justify-content-center">
+						<button class="filter__additional-btn">
+							<span class="filter__additional-btn-text">Еще параметры</span>
+						</button>
+					</div>
+
+
+					<div class="filter__additional-content">
+						<div class="filter__additional-content-wrapper">
+							<div class="filter__column">
+								<div class="filter__item filter__head">Район</div>
+								<div class="custom-select">
+									<input type="text" class="custom-select__input" value="">
+									<div class="custom-select__head drop-arrow">Центр</div>
+									<div class="custom-select__list">
+										<div class="custom-select__list-item custom-select__list-item_current">Центр
+										</div>
+										<div class="custom-select__list-item">Лукьяново</div>
+										<div class="custom-select__list-item">Заречье</div>
+										<div class="custom-select__list-item">Бывалово</div>
+										<div class="custom-select__list-item">Водники</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="filter__column">
+								<div class="filter__nouislider">
+									<div class="filter__item filter__head">Площадь</div>
+									<div class="slider-row">
+										<div class="slider-row__unit"></div>
+										<div class="slider-row__prices">
+											<input type="text" class="slider-row__prices-start input-event"
+												placeholder="от">
+											<input type="text" class="slider-row__prices-end input-event"
+												placeholder="до">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</form>
