@@ -81,6 +81,18 @@ $(function () {
 	let triggerSelect = $('.custom-select .custom-select__head');
 	let elementsSelect = $('.custom-select__list-item');
 
+	// function showSelectList() {
+	// 	if ($(this).hasClass('open')) {
+	// 		$(this).removeClass('open');
+	// 		$(this).find('.custom-select__list').slideUp();
+	// 	} else {
+	// 		$('.custom-select').removeClass('open');
+	// 		$('.custom-select__list').slideUp();
+	// 		$(this).addClass('open');
+	// 		$(this).find('.custom-select__list').slideDown();
+	// 	}
+	// }
+
 	const showSelectList = event => {
 		let target = $(event.target);
 
@@ -263,7 +275,10 @@ $(function () {
 	elementsSelect.on('click', setClassItemsList);
 	inputEvent.on('input', setRangeSlider);
 	$('.custom-select_type').on('change', showAppartViews);
-	$('.filter__additional-btn').on('click', openAdditionalParam)
+	$('.filter__additional-btn').on('click', openAdditionalParam);
+	// $('.custom-select').on('click', function () {
+	// 	console.log($(this));
+	// });
 
 	$('.catalog-item__button').on('click', e => e.preventDefault())
 

@@ -1,3 +1,9 @@
 .header-page {
 	box-shadow: 0 0 10px -7px $color-1;
+
+	.callback-list__drop-down {
+		border: 1px solid $color-12;
+		border-top: none;
+		@include border-radius(0 0 5px 5px);
+	}
 }

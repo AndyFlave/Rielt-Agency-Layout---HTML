@@ -100,3 +100,14 @@
 		}
 	}
 }
+
+
+@include for-small-desktop {
+	.filter {
+		&__column {
+			&:not(:last-child) {
+				margin-right: 25px;
+			}
+		}
+	}
+}

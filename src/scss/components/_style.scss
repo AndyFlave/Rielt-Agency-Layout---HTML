@@ -219,6 +219,7 @@ h3 {
 .custom-select {
   position: relative;
   min-width: 130px;
+  cursor: pointer;
 
   &__head {
     margin-bottom: 5px;
@@ -242,14 +243,19 @@ h3 {
     width: max-content;
     background-color: $default-color;
     padding: 6px 5px;
-    @include border-radius(5px);
+    @include border-radius(0 0 5px 5px);
     z-index: 99;
+    max-height: 135px;
   }
 
   &__list-item {
     font-size: 1.4rem;
     line-height: 1.15;
     cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &:not(:last-child) {
       margin-bottom: 2px;
