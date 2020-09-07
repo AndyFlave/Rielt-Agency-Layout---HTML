@@ -119,7 +119,7 @@ $(function () {
 				.find('.custom-select__input')
 				.attr('value', $(this).text())
 				.change()
-				.next('.custom-select__head').text(`${$(this).text()}`);
+				.next('.custom-select__head').children('span').text(`${$(this).text()}`);
 			closeSelectList();
 		});
 	}
