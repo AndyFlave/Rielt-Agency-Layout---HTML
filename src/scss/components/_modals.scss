@@ -1,0 +1,134 @@
+/* ========= MODALS ========= */
+.modal {
+	cursor: default !important;
+	padding: 0;
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&__img {
+		min-width: 180px;
+		background: no-repeat center/cover $default-color;
+	}
+
+	.field {
+		margin-bottom: 10px;
+		width: 100%;
+	}
+
+	.last-field {
+		margin-bottom: 15px !important;
+	}
+
+	.btn {
+		width: 100%;
+	}
+}
+
+.modal-content {
+	padding: 30px;
+	text-align: center;
+	max-width: 360px;
+	width: 100%;
+
+	&__title {
+		font-size: 2.2rem;
+		font-weight: 700;
+		margin-bottom: 20px;
+	}
+
+	&__form {
+		margin-bottom: 25px;
+
+		.btn {
+			border: none;
+			margin-top: 12px;
+			min-height: 60px;
+			font-size: 2rem;
+
+			&:hover {
+				// background-color: $second-color;
+				color: $default-color;
+			}
+		}
+	}
+
+	.politics__text {
+		font-size: 1.2rem;
+	}
+
+	.politics__checkbox {
+		min-width: 22px;
+		width: 22px;
+		height: 22px;
+	}
+}
+
+@include for-phone-only {
+	.modal {
+		&__img {
+			display: none;
+		}
+	}
+
+	.modal-content {
+		padding: 25px;
+
+		&__title {
+			font-size: 2rem;
+			margin-bottom: 20px;
+		}
+
+		&__form {
+			margin-bottom: 25px;
+
+			.btn {
+				margin-top: 6px;
+				min-height: 45px;
+			}
+		}
+
+		.politics__checkbox {
+			min-width: 20px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+
+.modal-info {
+
+	&__wrapper {
+		max-width: 750px;
+		flex-direction: column;
+		padding: 30px 40px;
+	}
+
+	&__heading {
+		font-size: 2.8rem;
+		font-weight: 700;
+		margin-bottom: 25px;
+		text-align: center;
+	}
+
+	&__content {
+		line-height: 1.6rem;
+		line-height: 1.4;
+	}
+}
+
+@include for-phone-only {
+
+	.modal-info {
+		&__wrapper {
+			padding: 25px 15px;
+		}
+
+		&__heading {
+			font-size: 2rem;
+			margin-bottom: 15px;
+		}
+	}
+}

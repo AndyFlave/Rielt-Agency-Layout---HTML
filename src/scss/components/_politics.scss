@@ -1,0 +1,116 @@
+.modal-container-polit {
+	max-width: 95%;
+	max-height: 95%;
+	width: 1000px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 36px 34px;
+	height: auto;
+	position: relative;
+	color: #333 !important;
+}
+
+.modal-block-polit {
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+	-webkit-box-pack: start;
+	-ms-flex-pack: start;
+	justify-content: flex-start;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+.caption_modal_new {
+	line-height: 16px;
+	font-size: 14px;
+	letter-spacing: -0.03em;
+	color: #616161;
+	margin-bottom: 34px;
+	max-width: 100%;
+	text-align: left;
+}
+
+.fancybox-content {
+	padding: 0 !important;
+}
+
+.modal-close-polit {
+	position: absolute;
+	top: 13px;
+	right: 13px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 34px;
+	height: 34px;
+	/* background-image: url(../img/krest-c.png); */
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+	cursor: pointer;
+	border-radius: 100%;
+	z-index: 100;
+}
+
+.modal-close-polit:hover {
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.modal-content-polit {
+	line-height: 22px;
+	padding: 15px;
+	cursor: pointer !important;
+}
+
+.title-modal-polit {
+	font-size: 32px;
+	line-height: 1.2;
+	letter-spacing: -0.03em;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.caption-modal-polit>p {
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+
+.caption-modal-polit ul,
+.caption-modal-polit ol {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.caption-modal-polit li {
+	background-size: auto;
+	background-position: 13px 4px;
+	background-repeat: no-repeat;
+	list-style: none;
+	list-style-image: none !important;
+	background-image: url(../img/ok-li.svg);
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-left: 45px;
+	margin-bottom: 8px;
+	font-size: 15px;
+	line-height: 1.2;
+}
+
+
+@media(max-width: 600px) {
+	.title-modal-polit {
+		font-size: 2.4rem;
+	}
+}
