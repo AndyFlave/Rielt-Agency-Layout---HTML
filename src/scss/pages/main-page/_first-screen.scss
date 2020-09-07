@@ -40,6 +40,10 @@
 		margin-bottom: 18px;
 	}
 
+	&__input {
+		display: none;
+	}
+
 	&__item {
 		background-color: $color-7;
 		margin: 0 2px;

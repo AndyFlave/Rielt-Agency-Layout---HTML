@@ -5,11 +5,16 @@
     <h1 class="first-screen__title">Недвижимость в Вологде</h1>
 
     <div class="first-screen__filter fs-filter">
-      <form action="/">
+      <form action="/action.php" method="POST">
         <div class="fs-filter__top">
-          <div class="fs-filter__item fs-filter__item_active">Купить</div>
-          <div class="fs-filter__item">Продать</div>
-          <div class="fs-filter__item">Аренда</div>
+          <label class="fs-filter__item fs-filter__item_active">Купить
+            <input type="radio" class="fs-filter__input" name="select-action" value="Купить">
+          </label>
+          <label class="fs-filter__item">Аренда
+            <input type="radio" class="fs-filter__input" name="select-action" value="Аренда">
+          </label>
+          <div class="fs-filter__item">Продать
+          </div>
         </div>
 
         <div class="fs-filter__bottom filter-form">

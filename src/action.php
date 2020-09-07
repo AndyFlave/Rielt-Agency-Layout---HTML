@@ -6,12 +6,16 @@
 	$e = $_POST['checkbox-5'];
 	$f = $_POST['select-type'];
 	$g = $_POST['select-view'];
+
+
+	$j = $_POST['select-action'];
+
 ?>
 <h1>
 	<? 
-	var_dump($_POST);
-	if ($a){
-		echo '<h1>TRUE</h1>';
+	// var_dump($_POST);
+	if ($j){
+		echo $j;
 	}
 	echo $b; 
 	echo $c; 

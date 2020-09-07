@@ -229,6 +229,10 @@ h3 {
     }
   }
 
+  &__head-unit {
+    pointer-events: none;
+  }
+
   &__input {
     display: none;
   }
