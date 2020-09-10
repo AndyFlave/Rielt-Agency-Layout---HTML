@@ -63,3 +63,13 @@
 		width: 100%;
 	}
 }
+
+@include for-phone-only {
+	.catalog-page {
+		padding-bottom: 45px;
+
+		&__title {
+			margin-bottom: 30px;
+		}
+	}
+}

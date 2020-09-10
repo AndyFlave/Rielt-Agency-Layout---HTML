@@ -1,371 +1,377 @@
 /* =========== DROP ARROW =========== */
 .drop-arrow {
-  position: relative;
-  padding-right: 22px;
-  cursor: pointer;
-  line-height: 1.2;
+	position: relative;
+	padding-right: 22px;
+	cursor: pointer;
+	line-height: 1.2;
 
-  &:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -7px;
-    width: 13px;
-    height: 8px;
-    @include translate(-50%, -50%);
-    background-image: url(../img/drop-arrow.svg) no-repeat center/contain;
-  }
+	&:after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: -7px;
+		width: 13px;
+		height: 8px;
+		@include translate(-50%, -50%);
+		background-image: url(../img/drop-arrow.svg) no-repeat center/contain;
+	}
 }
 
 @include for-very-small-desktop {
-  .drop-arrow {
-    padding-right: 18px;
-  }
+	.drop-arrow {
+		padding-right: 18px;
+	}
 }
 
 /* =========== ADD ICON =========== */
 .phones-icon,
 .emails-icon,
 .geo-icon {
-  position: relative;
-  padding-left: 24px;
+	position: relative;
+	padding-left: 24px;
 
-  &:before {
-    content: "";
-    position: absolute;
-    left: 8px;
-    top: 50%;
-    width: 14px;
-    height: 14px;
-    @include translate(-50%, -50%);
-  }
+	&:before {
+		content: "";
+		position: absolute;
+		left: 8px;
+		top: 50%;
+		width: 14px;
+		height: 14px;
+		@include translate(-50%, -50%);
+	}
 }
 
 .phones-icon {
-  &:before {
-    background-image: url(../img/tel.svg) no-repeat center/contain;
-  }
+	&:before {
+		background-image: url(../img/tel.svg) no-repeat center/contain;
+	}
 }
 
 .emails-icon {
-  &:before {
-    background-image: url(../img/email-icon.svg) no-repeat center/contain;
-  }
+	&:before {
+		background-image: url(../img/email-icon.svg) no-repeat center/contain;
+	}
 }
 
 .geo-icon {
-  &:before {
-    width: 16px;
-    height: 16px;
-    background-image: url(../img/geo.svg) no-repeat center/contain;
-  }
+	&:before {
+		width: 16px;
+		height: 16px;
+		background-image: url(../img/geo.svg) no-repeat center/contain;
+	}
 }
 
 /* =========== TITLES =========== */
 h1 {
-  font-size: 3.5rem;
+	font-size: 3.5rem;
 }
 
 h2 {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 h3 {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 @include for-very-small-desktop {
-  h3 {
-    font-size: 1.8rem;
-  }
+	h3 {
+		font-size: 1.8rem;
+	}
 }
 
 @include for-phone-only {
-  h2 {
-    font-size: 2.4rem !important;
-  }
+	h2 {
+		font-size: 2.4rem !important;
+	}
 }
 
 /* =========== PAGE TITLE =========== */
 .page-title {
-  font-size: 3rem;
+	font-size: 3rem;
 }
 
 @include for-phone-only {
-  .page-title {
-    font-size: 2.6rem;
-  }
+	.page-title {
+		font-size: 2.6rem;
+	}
 }
 
 /* =========== TITLE BLOCK =========== */
 .title-block {
-  font-weight: 700;
-  font-size: 3rem;
+	font-weight: 700;
+	font-size: 3rem;
 }
 
 @include for-phone-only {
-  .title-block {
-    font-size: 2.8rem !important;
-  }
+	.title-block {
+		font-size: 2.8rem !important;
+	}
 }
 
 /* =========== EMPTY =========== */
 .empty {
-  opacity: 0;
-  visibility: hidden;
-  height: 0 !important;
-  max-height: 0 !important;
-  min-height: 0 !important;
-  padding-bottom: 0 !important;
-  padding-top: 0 !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+	opacity: 0;
+	visibility: hidden;
+	height: 0 !important;
+	max-height: 0 !important;
+	min-height: 0 !important;
+	padding-bottom: 0 !important;
+	padding-top: 0 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
 }
 
 /* =========== JUSTFY CONTENT CENTER =========== */
 .justify-content-center {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 /* =========== BTN =========== */
 .btn {
-  padding: 15px 30px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 2rem;
-  line-height: 1.1;
-  color: $default-text-color;
-  background-color: $color-2;
-  @include transition(0.4s);
-  @include border-radius(2px);
-  cursor: pointer;
-  border: none;
-  outline: none;
+	padding: 15px 30px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 1.1;
+	color: $default-text-color;
+	background-color: $color-2;
+	@include transition(0.4s);
+	@include border-radius(2px);
+	cursor: pointer;
+	border: none;
+	outline: none;
 
-  &:hover {
-    background-color: $color-4;
-  }
+	&:hover {
+		background-color: $color-4;
+	}
 }
 
 @include for-phone-only {
-  .btn {
-    font-size: 1.6rem;
-  }
+	.btn {
+		font-size: 1.6rem;
+	}
 }
 
 /* =========== POLITICS LINK MODAL =========== */
 .politics-link-modal {
-  font-size: 1.4rem;
-  color: $color-text-2;
-  @include transition(0.4s);
+	font-size: 1.4rem;
+	color: $color-text-2;
+	@include transition(0.4s);
 
-  &:hover {
-    color: $color-text-4;
-    text-decoration: underline;
-  }
+	&:hover {
+		color: $color-text-4;
+		text-decoration: underline;
+	}
 }
 
 /* =========== FIELDS - INPUTS =========== */
 .field {
-  outline: none;
-  background-color: $color-8;
-  border: 1px solid $color-12;
-  padding: 15px;
-  font-size: 1.6rem;
-  line-height: 1.15;
-  @include border-radius(5px);
+	outline: none;
+	background-color: $color-8;
+	border: 1px solid $color-12;
+	padding: 15px;
+	font-size: 1.6rem;
+	line-height: 1.15;
+	@include border-radius(5px);
 }
 
 @include for-very-small-desktop {
-  .field {
-    padding: 12px;
-  }
+	.field {
+		padding: 12px;
+	}
 }
 
 @include for-phone-only {
-  .field {
-    padding: 10px 12px;
-  }
+	.field {
+		padding: 10px 12px;
+	}
 }
 
 /* =========== CUSTOM CHECKBOX =========== */
 .custom-checkbox {
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
 
-  &__input {
-    display: none;
+	&__input {
+		display: none;
 
-    &:checked+.custom-checkbox__unit {
-      background: url(../img/checkbox.svg) no-repeat center/12px $color-2;
-      border: 1px solid $color-2;
-    }
-  }
+		&:checked+.custom-checkbox__unit {
+			background: url(../img/checkbox.svg) no-repeat center/12px $color-2;
+			border: 1px solid $color-2;
+		}
+	}
 
-  &__unit {
-    display: inline-block;
-    min-width: 18px;
-    width: 18px;
-    height: 18px;
-    @include border-radius(5px);
-    border: 1px solid $color-12;
-  }
+	&__unit {
+		display: inline-block;
+		min-width: 18px;
+		width: 18px;
+		height: 18px;
+		@include border-radius(5px);
+		border: 1px solid $color-12;
+	}
 }
 
 
 /* =========== CUSTOM SELECT =========== */
 .custom-select {
-  position: relative;
-  min-width: 130px;
-  cursor: pointer;
+	position: relative;
+	min-width: 130px;
+	cursor: pointer;
 
-  &__head {
-    margin-bottom: 5px;
+	&__head {
+		margin-bottom: 5px;
 
-    &:after {
-      background: url(../img/select-arrow.svg) no-repeat center/contain;
-    }
-  }
+		&:after {
+			background: url(../img/select-arrow.svg) no-repeat center/contain;
+		}
+	}
 
-  &__head-unit {
-    pointer-events: none;
-  }
+	&__head-unit {
+		pointer-events: none;
+	}
 
-  &__input {
-    display: none;
-  }
+	&__input {
+		display: none;
+	}
 
-  &__list {
-    display: none;
-    position: absolute;
-    top: 100%;
-    border-top: 1px solid $color-12;
-    left: -5px;
-    min-width: calc(100% + 5px);
-    width: max-content;
-    background-color: $default-color;
-    padding: 6px 5px;
-    @include border-radius(0 0 5px 5px);
-    z-index: 99;
-    max-height: 135px;
-  }
+	&__list {
+		display: none;
+		position: absolute;
+		top: 100%;
+		border-top: 1px solid $color-12;
+		left: -5px;
+		min-width: calc(100% + 5px);
+		width: max-content;
+		background-color: $default-color;
+		padding: 6px 5px;
+		@include border-radius(0 0 5px 5px);
+		z-index: 99;
+		max-height: 135px;
+	}
 
-  &__list-item {
-    font-size: 1.4rem;
-    line-height: 1.15;
-    cursor: pointer;
+	&__list-item {
+		font-size: 1.4rem;
+		line-height: 1.15;
+		cursor: pointer;
 
-    &:hover {
-      text-decoration: underline;
-    }
+		&:hover {
+			text-decoration: underline;
+		}
 
-    &:not(:last-child) {
-      margin-bottom: 2px;
-    }
-  }
+		&:not(:last-child) {
+			margin-bottom: 2px;
+		}
+	}
 }
 
 /* =========== PAGINATION =========== */
 .pagination {
-  border: 1px solid $color-12;
-  display: flex;
+	border: 1px solid $color-12;
+	display: flex;
 
-  &__link {
-    min-width: 34px;
-    height: 34px;
-    font-size: 1.4rem;
-    line-height: 1.15;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $color-text-3;
-    border-right: 1px solid $color-12;
-    font-weight: 500;
-    text-transform: uppercase;
+	&__link {
+		min-width: 34px;
+		height: 34px;
+		font-size: 1.4rem;
+		line-height: 1.15;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: $color-text-3;
+		border-right: 1px solid $color-12;
+		font-weight: 500;
+		text-transform: uppercase;
 
-    &_current {
-      background-color: $color-12;
-    }
-  }
+		&_current {
+			background-color: $color-12;
+		}
+	}
 
-  &__next {}
+	&__next {}
 }
 
 
 /* =========== NOUSLIDER =========== */
 .slider-row {
-  min-width: 225px;
-  max-width: 225px;
-  width: 100%;
+	min-width: 225px;
+	max-width: 225px;
+	width: 100%;
 
-  &__unit {}
+	&__unit {}
 
-  &__prices {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    font-size: 1.4rem;
-  }
+	&__prices {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 15px;
+		font-size: 1.4rem;
+	}
 
-  &__prices-start,
-  &__prices-end {
-    max-width: 75px;
-    padding: 5px;
-    border: 1px solid $color-12;
-    outline: none;
-    line-height: 1.15;
-  }
+	&__prices-start,
+	&__prices-end {
+		max-width: 75px;
+		padding: 5px;
+		border: 1px solid $color-12;
+		outline: none;
+		line-height: 1.15;
+	}
 
-  .noUi-target {
-    height: 2px;
-    background: $color-12;
-    border: none;
-  }
+	.noUi-target {
+		height: 2px;
+		background: $color-12;
+		border: none;
+	}
 
-  .noUi-connect {
-    background: $color-2;
-  }
+	.noUi-connect {
+		background: $color-2;
+	}
 
-  .noUi-horizontal .noUi-handle {
-    background-color: $color-2;
-    box-shadow: none;
-    min-width: 12px;
-    width: 12px;
-    height: 12px;
-    right: -7px;
-    top: -5.5px;
-    @include border-radius(100%);
-    cursor: pointer;
+	.noUi-horizontal .noUi-handle {
+		background-color: $color-2;
+		box-shadow: none;
+		min-width: 12px;
+		width: 12px;
+		height: 12px;
+		right: -7px;
+		top: -5.5px;
+		@include border-radius(100%);
+		cursor: pointer;
 
-    &:after,
-    &:before {
-      content: none;
-    }
-  }
+		&:after,
+		&:before {
+			content: none;
+		}
+	}
+}
+
+@include for-phone-only {
+	.slider-row {
+		max-width: 100%;
+	}
 }
 
 /* =========== SIMILAR APPARTAMENTS =========== */
 .similar-appart {
-  padding: 40px 0 60px;
+	padding: 40px 0 60px;
 
-  &__item {
-    width: 100% !important;
-  }
+	&__item {
+		width: 100% !important;
+	}
 
-  &__title {
-    margin-bottom: 35px;
-  }
+	&__title {
+		margin-bottom: 35px;
+	}
 }
 
 @include for-phone-only {
-  .similar-appart {
-    padding: 20px 0 45px;
+	.similar-appart {
+		padding: 20px 0 45px;
 
-    &__title {
-      margin-bottom: 20px;
-    }
-  }
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
 }

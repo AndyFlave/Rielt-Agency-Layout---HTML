@@ -107,7 +107,38 @@
 		&__column {
 			&:not(:last-child) {
 				margin-right: 25px;
+				margin-bottom: 30px;
 			}
+
+			&:last-child {
+				justify-content: center;
+				width: 100%;
+				align-items: center;
+			}
+		}
+
+		&__inside-wrapper {
+			flex-wrap: wrap;
+		}
+
+		&__additional-content-wrapper {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+@include for-phone-only {
+	.filter {
+		&__column {
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 20px;
+				width: 100%;
+			}
+		}
+
+		&__nouislider {
+			width: 100%;
 		}
 	}
 }

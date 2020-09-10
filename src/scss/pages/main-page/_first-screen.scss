@@ -206,25 +206,13 @@
 	.first-screen {
 		padding: 100px 0 180px;
 
-		&__container {}
-
 		&__title {
 			font-size: 5rem;
 		}
-
-		&__filter {}
 	}
 
-	.container {}
 
 	.fs-filter {
-
-		&__top {}
-
-		&__item {
-
-			&_active {}
-		}
 
 		&__bottom {
 			padding: 8px 8px 8px 0;
@@ -232,8 +220,6 @@
 	}
 
 	.filter-form {
-
-		&__wrapper {}
 
 		&__type {
 			&:after {
@@ -266,24 +252,9 @@
 @include for-very-small-desktop {
 	.first-screen {
 		padding: 55px 0 60px;
-
-		&__container {}
-
-		&__title {}
-
-		&__filter {}
 	}
 
-	.container {}
-
 	.fs-filter {
-
-		&__top {}
-
-		&__item {
-
-			&_active {}
-		}
 
 		&__bottom {
 			padding: 16px 10px 16px;
@@ -313,8 +284,6 @@
 			&:not(:last-child) {
 				border-left: none;
 			}
-
-			&:after {}
 		}
 
 		&__custom-select {
@@ -340,8 +309,6 @@
 		&__input {
 			border-right: none;
 			border-bottom: 1px solid $color-6;
-
-			&:focus {}
 		}
 
 		&__btn {
@@ -366,21 +333,14 @@
 	.first-screen {
 		padding: 40px 0 60px;
 
-		&__container {}
-
 		&__title {
 			font-size: 3.2rem;
 			margin-bottom: 40px;
 		}
 
-		&__filter {}
 	}
 
-	.container {}
-
 	.fs-filter {
-
-		&__top {}
 
 		&__item {
 			font-size: 1.6rem;
@@ -394,21 +354,13 @@
 				}
 			}
 		}
-
-		&__bottom {
-			// padding: 5px 10px 16px;
-		}
 	}
 
 	.filter-form {
 
-		&__wrapper {}
-
 		&__type {
 			margin-bottom: 10px;
 		}
-
-		&__input {}
 
 		&__btn {
 			margin-top: 15px;
@@ -425,38 +377,8 @@
 	.first-screen {
 		padding: 30px 0 40px;
 
-		&__container {}
-
 		&__title {
 			margin-bottom: 30px;
 		}
-
-		&__filter {}
 	}
-
-	.container {}
-
-	.fs-filter {
-
-		&__top {}
-
-		&__item {
-
-			&_active {}
-		}
-
-		&__bottom {}
-	}
-
-	.filter-form {
-
-		&__wrapper {}
-
-		&__type {}
-
-		&__input {}
-
-		&__btn {}
-	}
-
 }
