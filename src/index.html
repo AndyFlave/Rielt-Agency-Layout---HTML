@@ -1,305 +1,323 @@
 @@include('header.html')
 
 <section class="first-screen">
-  <div class="container first-screen__container">
-    <h1 class="first-screen__title">Недвижимость в Вологде</h1>
+	<div class="container first-screen__container">
+		<h1 class="first-screen__title">Недвижимость в Вологде</h1>
 
-    <div class="first-screen__filter fs-filter">
-      <form action="/action.php" method="POST">
-        <div class="fs-filter__top">
-          <label class="fs-filter__item fs-filter__item_active">Купить
-            <input type="radio" class="fs-filter__input" name="select-action" value="Купить">
-          </label>
-          <label class="fs-filter__item">Аренда
-            <input type="radio" class="fs-filter__input" name="select-action" value="Аренда">
-          </label>
-          <div class="fs-filter__item">Продать
-          </div>
-        </div>
+		<div class="first-screen__filter fs-filter">
+			<form action="/action.php" method="POST">
+				<div class="fs-filter__top">
+					<label class="fs-filter__item fs-filter__item_active">Купить
+						<input type="radio" class="fs-filter__input" name="select-action" value="Купить">
+					</label>
+					<label class="fs-filter__item">Аренда
+						<input type="radio" class="fs-filter__input" name="select-action" value="Аренда">
+					</label>
+					<div class="fs-filter__item">Продать</div>
+				</div>
 
-        <div class="fs-filter__bottom filter-form">
+				<div class="fs-filter__bottom filter-form">
+					<div class="filter-form__wrapper">
+						<div class="filter-form__type">
+							<div class="custom-select filter-form__custom-select">
+								<input type="text" class="custom-select__input custom-select_type" value="Вторичка"
+									name="select-type">
+								<div class="custom-select__head filter-form__select-inside-position drop-arrow">
+									<span class="filter-form__select-item">
+										Вторичка
+									</span>
+								</div>
+								<div class="custom-select__list">
+									<div class="custom-select__list-item custom-select__list-item_current">Вторичка
+									</div>
+									<div class="custom-select__list-item">Новостройки</div>
+								</div>
+							</div>
+						</div>
 
-          <div class="filter-form__wrapper">
+						<div class="filter-form__type">
+							<div class="custom-select filter-form__custom-select">
+								<input type="text" class="custom-select__input custom-select_type apart"
+									value="Квартиры" name="select-type">
+								<div class="custom-select__head filter-form__select-inside-position drop-arrow">
+									<span class="filter-form__select-item">
+										Квартиры
+									</span>
+								</div>
+								<div class="custom-select__list">
+									<div class="custom-select__list-item custom-select__list-item_current">Квартиры
+									</div>
+									<div class="custom-select__list-item">Комнаты</div>
+									<div class="custom-select__list-item">Земельные участки</div>
+									<div class="custom-select__list-item">Дома</div>
+									<div class="custom-select__list-item">Дачи</div>
+								</div>
+							</div>
+						</div>
 
-            <div class="filter-form__type">
-              <div class="custom-select filter-form__custom-select">
-                <input type="text" class="custom-select__input custom-select_type" value="Вторичка" name="select-type">
-                <div class="custom-select__head filter-form__select-inside-position drop-arrow">
-                  <span class="filter-form__select-item">
-                    Вторичка
-                  </span>
-                </div>
-                <div class="custom-select__list">
-                  <div class="custom-select__list-item custom-select__list-item_current">Вторичка</div>
-                  <div class="custom-select__list-item">Новостройки</div>
-                </div>
-              </div>
-            </div>
+						<div class="filter-form__type apart-type">
+							<div class="custom-select filter-form__custom-select">
+								<input type="text" class="custom-select__input custom-select_type" value="Студии"
+									name="select-type">
+								<div class="custom-select__head filter-form__select-inside-position drop-arrow">
+									<span class="filter-form__select-item">Студии</span>
+								</div>
+								<div class="custom-select__list">
+									<div class="custom-select__list-item custom-select__list-item_current">Студии
+									</div>
+									<div class="custom-select__list-item">1 комнатные</div>
+									<div class="custom-select__list-item">2х комнатные</div>
+									<div class="custom-select__list-item">3х комнатные</div>
+									<div class="custom-select__list-item">4х комнатные</div>
+								</div>
+							</div>
+						</div>
 
-            <div class="filter-form__type">
-              <div class="custom-select filter-form__custom-select">
-                <input type="text" class="custom-select__input custom-select_type" value="Вторичка" name="select-type">
-                <div class="custom-select__head filter-form__select-inside-position drop-arrow">
-                  <span class="filter-form__select-item">
-                    Вторичка
-                  </span>
-                </div>
-                <div class="custom-select__list">
-                  <div class="custom-select__list-item custom-select__list-item_current">Вторичка</div>
-                  <div class="custom-select__list-item">Новостройки</div>
-                </div>
-              </div>
-            </div>
+						<div class="filter-form__type">
+							<div class="custom-select filter-form__custom-select">
+								<input type="text" class="custom-select__input custom-select_type" value="Район"
+									name="select-type">
+								<div class="custom-select__head filter-form__select-inside-position drop-arrow">
+									<span class="filter-form__select-item">
+										Район
+									</span>
+								</div>
+								<div class="custom-select__list">
+									<div class="custom-select__list-item custom-select__list-item_current">Район
+									</div>
+									<div class="custom-select__list-item">Центр</div>
+									<div class="custom-select__list-item">Бывалово</div>
+									<div class="custom-select__list-item">Водники</div>
+								</div>
+							</div>
+						</div>
 
-            <div class="filter-form__type">
-              <div class="custom-select filter-form__custom-select">
-                <input type="text" class="custom-select__input custom-select_type" value="Вторичка" name="select-type">
-                <div class="custom-select__head filter-form__select-inside-position drop-arrow">
-                  <span class="filter-form__select-item">
-                    Вторичка
-                  </span>
-                </div>
-                <div class="custom-select__list">
-                  <div class="custom-select__list-item custom-select__list-item_current">Вторичка</div>
-                  <div class="custom-select__list-item">Новостройки</div>
-                </div>
-              </div>
-            </div>
+						<button type="submit" class="filter-form__btn">Поиск</button>
+					</div>
 
-            <div class="filter-form__type">
-              <div class="custom-select filter-form__custom-select">
-                <input type="text" class="custom-select__input custom-select_type" value="Вторичка" name="select-type">
-                <div class="custom-select__head filter-form__select-inside-position drop-arrow">
-                  <span class="filter-form__select-item">
-                    Вторичка
-                  </span>
-                </div>
-                <div class="custom-select__list">
-                  <div class="custom-select__list-item custom-select__list-item_current">Вторичка</div>
-                  <div class="custom-select__list-item">Новостройки</div>
-                </div>
-              </div>
-            </div>
+					<div class="filter-form__wrapper-sell">
+						<div class="filter-form__text">
+							Оставьте номер телефона и наш специалист свяжеться с Вами.
+						</div>
+						<a href="#callback" data-fancybox class="btn filter-form__btn">Оставить заявку</a>
+					</div>
 
-            <button type="submit" class="filter-form__btn">Поиск</button>
-          </div>
-
-        </div>
-      </form>
-    </div>
-  </div>
+				</div>
+			</form>
+		</div>
+	</div>
 </section>
 
 <section class="catalog">
-  <div class="container">
-    <h2 class="title-block">Каталог</h2>
+	<div class="container">
+		<h2 class="title-block">Каталог</h2>
 
-    <div class="catalog__box">
-      <a href="#" class="catalog__item">
-        <div class="catalog__item-header">
-          <div class="catalog__slider owl-carousel">
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
-            </div>
-          </div>
+		<div class="catalog__box">
+			<a href="#" class="catalog__item">
+				<div class="catalog__item-header">
+					<div class="catalog__slider owl-carousel">
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/fs-bg.png" alt="">
+						</div>
+					</div>
 
-          <div class="catalog__item-sign">
-            <div class="catalog__item-obj">2х - комнатная квартира</div>
-            <div class="catalog__item-separator"></div>
-            <div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
-          </div>
-        </div>
+					<div class="catalog__item-sign">
+						<div class="catalog__item-obj">2х - комнатная квартира</div>
+						<div class="catalog__item-separator"></div>
+						<div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
+					</div>
+				</div>
 
-        <div class="catalog-footer">
-          <strong class="catalog-footer__price">22 200 000
-            <span class="catalog-footer__price_lower">руб.</span>
-          </strong>
-          <div class="catalog-footer__link">Подробнее</div>
-        </div>
-      </a>
+				<div class="catalog-footer">
+					<strong class="catalog-footer__price">22 200 000
+						<span class="catalog-footer__price_lower">руб.</span>
+					</strong>
+					<div class="catalog-footer__link">Подробнее</div>
+				</div>
+			</a>
 
-      <a href="#" class="catalog__item">
-        <div class="catalog__item-header">
-          <div class="catalog__slider owl-carousel">
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-          </div>
+			<a href="#" class="catalog__item">
+				<div class="catalog__item-header">
+					<div class="catalog__slider owl-carousel">
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+					</div>
 
-          <div class="catalog__item-sign">
-            <div class="catalog__item-obj">2х - комнатная квартира</div>
-            <div class="catalog__item-separator"></div>
-            <div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
-          </div>
-        </div>
+					<div class="catalog__item-sign">
+						<div class="catalog__item-obj">2х - комнатная квартира</div>
+						<div class="catalog__item-separator"></div>
+						<div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
+					</div>
+				</div>
 
-        <div class="catalog-footer">
-          <strong class="catalog-footer__price">22 200 000
-            <span class="catalog-footer__price_lower">руб.</span>
-          </strong>
-          <div class="catalog-footer__link">Подробнее</div>
-        </div>
-      </a>
+				<div class="catalog-footer">
+					<strong class="catalog-footer__price">22 200 000
+						<span class="catalog-footer__price_lower">руб.</span>
+					</strong>
+					<div class="catalog-footer__link">Подробнее</div>
+				</div>
+			</a>
 
-      <a href="#" class="catalog__item">
-        <div class="catalog__item-header">
-          <div class="catalog__slider owl-carousel">
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-          </div>
+			<a href="#" class="catalog__item">
+				<div class="catalog__item-header">
+					<div class="catalog__slider owl-carousel">
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+					</div>
 
-          <div class="catalog__item-sign">
-            <div class="catalog__item-obj">2х - комнатная квартира</div>
-            <div class="catalog__item-separator"></div>
-            <div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
-          </div>
-        </div>
+					<div class="catalog__item-sign">
+						<div class="catalog__item-obj">2х - комнатная квартира</div>
+						<div class="catalog__item-separator"></div>
+						<div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
+					</div>
+				</div>
 
-        <div class="catalog-footer">
-          <strong class="catalog-footer__price">22 200 000
-            <span class="catalog-footer__price_lower">руб.</span>
-          </strong>
-          <div class="catalog-footer__link">Подробнее</div>
-        </div>
-      </a>
+				<div class="catalog-footer">
+					<strong class="catalog-footer__price">22 200 000
+						<span class="catalog-footer__price_lower">руб.</span>
+					</strong>
+					<div class="catalog-footer__link">Подробнее</div>
+				</div>
+			</a>
 
-      <a href="#" class="catalog__item">
-        <div class="catalog__item-header">
-          <div class="catalog__slider owl-carousel">
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-          </div>
+			<a href="#" class="catalog__item">
+				<div class="catalog__item-header">
+					<div class="catalog__slider owl-carousel">
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+					</div>
 
-          <div class="catalog__item-sign">
-            <div class="catalog__item-obj">2х - комнатная квартира</div>
-            <div class="catalog__item-separator"></div>
-            <div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
-          </div>
-        </div>
+					<div class="catalog__item-sign">
+						<div class="catalog__item-obj">2х - комнатная квартира</div>
+						<div class="catalog__item-separator"></div>
+						<div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
+					</div>
+				</div>
 
-        <div class="catalog-footer">
-          <strong class="catalog-footer__price">22 200 000
-            <span class="catalog-footer__price_lower">руб.</span>
-          </strong>
-          <div class="catalog-footer__link">Подробнее</div>
-        </div>
-      </a>
+				<div class="catalog-footer">
+					<strong class="catalog-footer__price">22 200 000
+						<span class="catalog-footer__price_lower">руб.</span>
+					</strong>
+					<div class="catalog-footer__link">Подробнее</div>
+				</div>
+			</a>
 
-      <a href="#" class="catalog__item">
-        <div class="catalog__item-header">
-          <div class="catalog__slider owl-carousel">
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-          </div>
+			<a href="#" class="catalog__item">
+				<div class="catalog__item-header">
+					<div class="catalog__slider owl-carousel">
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+					</div>
 
-          <div class="catalog__item-sign">
-            <div class="catalog__item-obj">2х - комнатная квартира</div>
-            <div class="catalog__item-separator"></div>
-            <div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
-          </div>
-        </div>
+					<div class="catalog__item-sign">
+						<div class="catalog__item-obj">2х - комнатная квартира</div>
+						<div class="catalog__item-separator"></div>
+						<div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
+					</div>
+				</div>
 
-        <div class="catalog-footer">
-          <strong class="catalog-footer__price">22 200 000
-            <span class="catalog-footer__price_lower">руб.</span>
-          </strong>
-          <div class="catalog-footer__link">Подробнее</div>
-        </div>
-      </a>
+				<div class="catalog-footer">
+					<strong class="catalog-footer__price">22 200 000
+						<span class="catalog-footer__price_lower">руб.</span>
+					</strong>
+					<div class="catalog-footer__link">Подробнее</div>
+				</div>
+			</a>
 
-      <a href="#" class="catalog__item">
-        <div class="catalog__item-header">
-          <div class="catalog__slider owl-carousel">
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-            <div class="catalog__slider-item">
-              <img class="catalog__slider-img" src="/img/slide1.png" alt="">
-            </div>
-          </div>
+			<a href="#" class="catalog__item">
+				<div class="catalog__item-header">
+					<div class="catalog__slider owl-carousel">
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+						<div class="catalog__slider-item">
+							<img class="catalog__slider-img" src="/img/slide1.png" alt="">
+						</div>
+					</div>
 
-          <div class="catalog__item-sign">
-            <div class="catalog__item-obj">2х - комнатная квартира</div>
-            <div class="catalog__item-separator"></div>
-            <div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
-          </div>
-        </div>
+					<div class="catalog__item-sign">
+						<div class="catalog__item-obj">2х - комнатная квартира</div>
+						<div class="catalog__item-separator"></div>
+						<div class="catalog__item-address">г.Вологда, ул Ленинградская 35</div>
+					</div>
+				</div>
 
-        <div class="catalog-footer">
-          <strong class="catalog-footer__price">22 200 000
-            <span class="catalog-footer__price_lower">руб.</span>
-          </strong>
-          <div class="catalog-footer__link">Подробнее</div>
-        </div>
-      </a>
+				<div class="catalog-footer">
+					<strong class="catalog-footer__price">22 200 000
+						<span class="catalog-footer__price_lower">руб.</span>
+					</strong>
+					<div class="catalog-footer__link">Подробнее</div>
+				</div>
+			</a>
 
-      <div class="catalog__item empty"></div>
-      <div class="catalog__item empty"></div>
-    </div>
+			<div class="catalog__item empty"></div>
+			<div class="catalog__item empty"></div>
+		</div>
 
-    <div class="justify-content-center">
-      <a href="#" class="btn catalog__btn">Больше квартир в каталоге</a>
-    </div>
-  </div>
+		<div class="justify-content-center">
+			<a href="#" class="btn catalog__btn">Больше квартир в каталоге</a>
+		</div>
+	</div>
 </section>
 
 <section class="consult">
-  <div class="container consult__container">
-    <div class="consult__title-box">
-      <h2 class="title-block consult__title">Нужна индивидуальная консультация?</h2>
-      <div class="consult__subtitle">Позвоните нам - мы с радостью ответим на ваши вопросы!</div>
-    </div>
+	<div class="container consult__container">
+		<div class="consult__title-box">
+			<h2 class="title-block consult__title">Нужна индивидуальная консультация?</h2>
+			<div class="consult__subtitle">Позвоните нам - мы с радостью ответим на ваши вопросы!</div>
+		</div>
 
-    <a href="#consult" data-fancybox class="btn consult__btn">Получить консультацию</a>
-  </div>
+		<a href="#consult" data-fancybox class="btn consult__btn">Получить консультацию</a>
+	</div>
 </section>
 </div>
 

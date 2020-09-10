@@ -260,7 +260,26 @@ $(function () {
 		let target = $(event.currentTarget);
 		$('.fs-filter__item').removeClass('fs-filter__item_active');
 		target.addClass('fs-filter__item_active');
+
+		if (target.text() === 'Продать') {
+			$('.filter-form').addClass('sell-action');
+		} else {
+			$('.filter-form').removeClass('sell-action');
+		}
 	}
+
+	const setSelectsPage = () => {
+		let apart = $('.apart');
+		let apartType = $('.apart-type');
+		if ($.trim(apart.val()) === 'Квартиры') {
+			apartType.show();
+		} else {
+			apartType.hide();
+		}
+	}
+
+	setSelectsPage();
+
 
 	// EVENTS
 
@@ -268,7 +287,10 @@ $(function () {
 	triggerSelect.on('click', showSelectList);
 	elementsSelect.on('click', setClassItemsList);
 	inputEvent.on('input', setRangeSlider);
-	$('.custom-select_type').on('change', showAppartViews);
+	$('.custom-select_type').on('change', event => {
+		showAppartViews(event)
+		setSelectsPage()
+	});
 	$('.filter__additional-btn').on('click', openAdditionalParam);
 	$('.fs-filter__item').on('click', selectFilterAction);
 
